@@ -3,6 +3,7 @@ import 'package:flutter_gym_management_system/screen/login_register/login/forgot
 
 import '../../../widget/button_widget.dart';
 import '../../../widget/form_widget.dart';
+import '../../../screen/homepage/homepage_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -55,17 +56,27 @@ class _LoginScreenState extends State<LoginScreen> {
                           Column(
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
-                                Container(
-                                  height:
-                                      MediaQuery.of(context).size.height * 0.3,
-                                  width: double.infinity,
-                                  decoration: BoxDecoration(
-                                    image: DecorationImage(
-                                      image: AssetImage(
-                                          'assets/images/login_image.png'),
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
+                                SizedBox(
+                                  height: 20.0,
+                                ),
+                                // Container(
+                                //   height:
+                                //       MediaQuery.of(context).size.height * 0.2,
+                                //   width: 320.0,
+                                //   decoration: BoxDecoration(
+                                //     image: DecorationImage(
+                                //       image:
+                                //           AssetImage('assets/images/Logo.png'),
+                                //       fit: BoxFit.cover,
+                                //     ),
+                                //   ),
+                                // ),
+                                Image.asset(
+                                  'assets/images/Logo.png',
+                                  height: 100.0,
+                                ),
+                                SizedBox(
+                                  height: 20.0,
                                 ),
                                 Padding(
                                     padding: EdgeInsets.symmetric(
@@ -96,7 +107,13 @@ class _LoginScreenState extends State<LoginScreen> {
                                       ),
                                       ButtonWidget(
                                         text: 'Masuk',
-                                        onClicked: () {},
+                                        onClicked: () {
+                                          Navigator.of(context).push(
+                                              MaterialPageRoute(
+                                                  builder: (context) {
+                                            return HomePageScreen();
+                                          }));
+                                        },
                                       ),
                                       SizedBox(
                                         height: 20.0,
