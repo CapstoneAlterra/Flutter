@@ -1,16 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gym_management_system/screen/login_register/login/login_screen..dart';
+import 'package:intl_phone_number_input/intl_phone_number_input.dart';
 
 import '../../../widget/button_widget.dart';
 import '../../../widget/form_widget.dart';
-import 'register3_screen.dart';
 
-class Register extends StatefulWidget {
-  @override
-  _RegisterState createState() => _RegisterState();
-}
+class VerificationCode extends StatelessWidget {
+  const VerificationCode({Key? key}) : super(key: key);
 
-class _RegisterState extends State<Register> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,33 +32,55 @@ class _RegisterState extends State<Register> {
             const SizedBox(
               height: 20.0,
             ),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 20.0),
+            ),
             Text(
-              'How should we call you?',
+              'Verification Code',
               style: TextStyle(
                 fontSize: 15.0,
                 fontWeight: FontWeight.w600,
               ),
             ),
-            const SizedBox(
-              height: 30.0,
+            SizedBox(
+              height: 20.0,
             ),
             Padding(
                 padding: EdgeInsets.symmetric(
                   horizontal: 20.0,
                 ),
                 child: Column(children: [
+                  Text(
+                      'We have sent 4 digit verification code to the number $PhoneNumber'),
+                  const SizedBox(
+                    height: 25.0,
+                  ),
                   FormWidget(
-                    label: 'Your Full Name',
+                    label: 'Enter Code',
                   ),
                   SizedBox(
                     height: 20.0,
                   ),
+                  Text('If you did not receive the code'),
+                  TextButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => LoginScreen(),
+                          ),
+                        );
+                      },
+                      child: Text('Resend Code')),
+                  const SizedBox(
+                    height: 20.0,
+                  ),
                   ButtonWidget(
-                      text: 'Next',
+                      text: 'Verify',
                       onClicked: () {
                         Navigator.of(context)
                             .push(MaterialPageRoute(builder: (context) {
-                          return Register2();
+                          return LoginScreen();
                         }));
                       })
                 ]))

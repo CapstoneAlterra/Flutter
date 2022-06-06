@@ -3,14 +3,8 @@ import 'package:flutter_gym_management_system/screen/login_register/login/login_
 
 import '../../../widget/button_widget.dart';
 import '../../../widget/form_widget.dart';
-import 'register3_screen.dart';
 
-class Register extends StatefulWidget {
-  @override
-  _RegisterState createState() => _RegisterState();
-}
-
-class _RegisterState extends State<Register> {
+class ForgotPassword2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,7 +13,7 @@ class _RegisterState extends State<Register> {
           backgroundColor: Colors.white,
           elevation: 0,
           title: Text(
-            'Daftar',
+            'Forgot Password',
             style: TextStyle(
               color: Colors.black,
               fontSize: 20.0,
@@ -36,7 +30,7 @@ class _RegisterState extends State<Register> {
               height: 20.0,
             ),
             Text(
-              'How should we call you?',
+              'New Password',
               style: TextStyle(
                 fontSize: 15.0,
                 fontWeight: FontWeight.w600,
@@ -51,17 +45,21 @@ class _RegisterState extends State<Register> {
                 ),
                 child: Column(children: [
                   FormWidget(
-                    label: 'Your Full Name',
+                    label: 'Create New Password',
                   ),
+                  SizedBox(
+                    height: 10.0,
+                  ),
+                  FormWidget(label: 'Confirm New Password'),
                   SizedBox(
                     height: 20.0,
                   ),
                   ButtonWidget(
-                      text: 'Next',
+                      text: 'Change',
                       onClicked: () {
                         Navigator.of(context)
                             .push(MaterialPageRoute(builder: (context) {
-                          return Register2();
+                          return LoginScreen();
                         }));
                       })
                 ]))

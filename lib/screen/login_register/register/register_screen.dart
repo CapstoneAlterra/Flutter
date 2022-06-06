@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gym_management_system/screen/login_register/register/register2_screen.dart';
 
 import '../../../widget/button_widget.dart';
 import '../../../widget/form_widget.dart';
@@ -33,52 +34,52 @@ class RegisterScreen extends StatelessWidget {
         body: SafeArea(
           child: SingleChildScrollView(
             child: Container(
-                height: MediaQuery.of(context).size.height,
-                width: double.infinity,
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          const SizedBox(
-                            height: 20.0,
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 35.0,
-                            ),
-                            child: Column(children: [
-                              FormWidget(
-                                label: 'Email',
-                              ),
-                              const SizedBox(
-                                height: 8.0,
-                              ),
-                              FormWidget(
-                                label: 'Password',
-                              ),
-                              const SizedBox(
-                                height: 8.0,
-                              ),
-                              FormWidget(
-                                label: 'Confirm Password',
-                              ),
-                              const SizedBox(
-                                height: 15.0,
-                              ),
-                              ButtonWidget(
-                                text: 'Next',
-                                onClicked: () {},
-                              ),
-                              const SizedBox(
-                                height: 20.0,
-                              ),
-                            ]),
-                          ),
-                        ]),
-                  ],
-                )),
+              children: [
+                Column(children: [
+                  const SizedBox(
+                    height: 20.0,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 20.0,
+                    ),
+                    child: Column(children: [
+                      FormWidget(
+                        label: 'Email',
+                      ),
+                      const SizedBox(
+                        height: 8.0,
+                      ),
+                      FormWidget(
+                        label: 'Password',
+                      ),
+                      const SizedBox(
+                        height: 8.0,
+                      ),
+                      FormWidget(
+                        label: 'Confirm Password',
+                      ),
+                      const SizedBox(
+                        height: 15.0,
+                      ),
+                      ButtonWidget(
+                        text: 'Next',
+                        onClicked: () {
+                          Navigator.of(context)
+                              .push(MaterialPageRoute(builder: (context) {
+                            return Register();
+                          }));
+                        },
+                      ),
+                      const SizedBox(
+                        height: 20.0,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ],
+            )),
           ),
         ));
   }

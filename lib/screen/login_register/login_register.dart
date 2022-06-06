@@ -36,7 +36,7 @@ class LoginRegister extends StatelessWidget {
                   fontSize: 15.0,
                   fontWeight: FontWeight.w400,
                 )),
-            SizedBox(height: 75.0),
+            SizedBox(height: 200.0),
             ButtonWidget(
                 text: 'Mulai',
                 onClicked: () {
