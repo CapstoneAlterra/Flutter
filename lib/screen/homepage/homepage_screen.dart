@@ -32,19 +32,31 @@ class _HomePageScreenState extends State<HomePageScreen> {
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
+            icon: Icon(
+              Icons.home_outlined,
+              size: 30,
+            ),
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.class_),
+            icon: Icon(
+              Icons.calendar_month,
+              size: 30,
+            ),
+            label: 'Activity',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.fitness_center,
+              size: 30,
+            ),
             label: 'Class',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.calendar_today),
-            label: 'Schedule',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.account_box_rounded),
+            icon: Icon(
+              Icons.person,
+              size: 30,
+            ),
             label: 'Account',
           ),
         ],
