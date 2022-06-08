@@ -57,6 +57,54 @@ class _HomepageHomeState extends State<HomepageHome> {
             const SizedBox(
               height: 20.0,
             ),
+            Container(
+              padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+              width: double.infinity,
+              decoration: BoxDecoration(
+                color: const Color.fromARGB(255, 237, 5, 5),
+                border: Border.all(
+                  color: const Color.fromARGB(255, 237, 5, 5),
+                  width: 5,
+                ),
+              ),
+              child: Column(
+                children: const [
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: Text(
+                      'Membership GymBud',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 18.0,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                  Align(
+                    alignment: Alignment.centerRight,
+                    child: Text(
+                      'Exp 27/07/22',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 14.0,
+                      ),
+                    ),
+                  ),
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: Text(
+                      'ID 97892321',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 16.0,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(
+              height: 20.0,
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: const [
