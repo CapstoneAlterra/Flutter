@@ -3,6 +3,7 @@ import 'package:flutter_gym_management_system/screen/login_register/login/login_
 
 import '../../../widget/button_widget.dart';
 import '../../../widget/form_widget.dart';
+import '../../../widget/password_widget.dart';
 
 class ForgotPassword2 extends StatelessWidget {
   @override
@@ -44,13 +45,27 @@ class ForgotPassword2 extends StatelessWidget {
                   horizontal: 20.0,
                 ),
                 child: Column(children: [
-                  FormWidget(
-                    label: 'Create New Password',
+                  Text(
+                    'Create New Password',
+                    style: TextStyle(
+                      fontSize: 15.0,
+                      fontWeight: FontWeight.w400,
+                      color: Colors.grey[600],
+                    ),
                   ),
+                  PasswordWidget(),
                   SizedBox(
                     height: 10.0,
                   ),
-                  FormWidget(label: 'Confirm New Password'),
+                  Text(
+                    'Confirm New Password',
+                    style: TextStyle(
+                      fontSize: 15.0,
+                      fontWeight: FontWeight.w400,
+                      color: Colors.grey[600],
+                    ),
+                  ),
+                  PasswordWidget(),
                   SizedBox(
                     height: 20.0,
                   ),
