@@ -3,6 +3,7 @@ import 'package:flutter_gym_management_system/screen/login_register/register/reg
 
 import '../../../widget/button_widget.dart';
 import '../../../widget/form_widget.dart';
+import '../../../widget/password_widget.dart';
 
 class RegisterScreen extends StatelessWidget {
   @override
@@ -51,15 +52,27 @@ class RegisterScreen extends StatelessWidget {
                       const SizedBox(
                         height: 8.0,
                       ),
-                      FormWidget(
-                        label: 'Password',
+                      Text(
+                        'Password',
+                        style: TextStyle(
+                          fontSize: 15.0,
+                          fontWeight: FontWeight.w400,
+                          color: Colors.grey[600],
+                        ),
                       ),
+                      PasswordWidget(),
                       const SizedBox(
                         height: 8.0,
                       ),
-                      FormWidget(
-                        label: 'Confirm Password',
+                      Text(
+                        'Confirm Password',
+                        style: TextStyle(
+                          fontSize: 15.0,
+                          fontWeight: FontWeight.w400,
+                          color: Colors.grey[600],
+                        ),
                       ),
+                      PasswordWidget(),
                       const SizedBox(
                         height: 15.0,
                       ),
