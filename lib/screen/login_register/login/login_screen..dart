@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gym_management_system/screen/login_register/login/forgot_password_screen.dart';
+import 'package:flutter_gym_management_system/widget/password_widget.dart';
 
 import '../../../widget/button_widget.dart';
 import '../../../widget/form_widget.dart';
 import '../../homepage/HomePage_Screen.dart';
-import '../../homepage/homepage_home.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -12,14 +12,6 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
-  bool _isHidePassword = true;
-
-  void _togglePasswordVisibility() {
-    setState(() {
-      _isHidePassword = !_isHidePassword;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -82,19 +74,15 @@ class _LoginScreenState extends State<LoginScreen> {
                   SizedBox(
                     height: 20.0,
                   ),
-                  FormWidget(
-                    // obscureText: _isHidePassword,
-                    label: 'Password',
-                    // suffixIcon: IconButton(
-                    //   icon: Icon(
-                    //     _isHidePassword
-                    //         ? Icons.visibility_off
-                    //         : Icons.visibility,
-                    //     color: Colors.black,
-                    //   ),
-                    //   onPressed: _togglePasswordVisibility,
-                    // ),
+                  Text(
+                    'Password',
+                    style: TextStyle(
+                      fontSize: 15.0,
+                      fontWeight: FontWeight.w400,
+                      color: Colors.grey[600],
+                    ),
                   ),
+                  PasswordWidget(),
                   SizedBox(
                     height: 20.0,
                   ),
@@ -104,7 +92,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => HomepageHome(),
+                          builder: (context) => HomePageHome(),
                         ),
                       );
                     },
