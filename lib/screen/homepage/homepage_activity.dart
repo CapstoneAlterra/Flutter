@@ -14,6 +14,7 @@ class _HomepageActivityState extends State<HomepageActivity> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         title: Image.asset(
           'assets/images/Logo.png',
           height: 50.0,
