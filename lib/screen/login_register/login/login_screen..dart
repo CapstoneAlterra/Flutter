@@ -5,6 +5,7 @@ import 'package:flutter_gym_management_system/widget/password_widget.dart';
 import '../../../widget/button_widget.dart';
 import '../../../widget/form_widget.dart';
 import '../../homepage/HomePage_Screen.dart';
+import '../../homepage/homepage_home.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -47,7 +48,7 @@ class _LoginScreenState extends State<LoginScreen> {
               height: 50.0,
             ),
             Image.asset(
-              'assets/images/logo.png',
+              'assets/images/Logo.png',
               width: 200,
             ),
             const SizedBox(
@@ -92,7 +93,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => HomePageHome(),
+                          builder: (context) => HomePageScreen(),
                         ),
                       );
                     },
