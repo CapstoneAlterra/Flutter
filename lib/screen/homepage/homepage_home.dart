@@ -12,6 +12,7 @@ class _HomepageHomeState extends State<HomepageHome> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         title: Image.asset(
           'assets/images/Logo.png',
           height: 50.0,
@@ -36,24 +37,14 @@ class _HomepageHomeState extends State<HomepageHome> {
             const SizedBox(
               height: 15.0,
             ),
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                minimumSize: const Size.fromHeight(50.0),
-                primary: const Color.fromARGB(255, 237, 5, 5),
-                elevation: 5,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(3.0),
-                ),
-              ),
-              child: const Text(
-                'Join Membership',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 25.0,
-                ),
-              ),
-              onPressed: () {},
-            ),
+            ButtonWidget(
+                text: 'Join Membership',
+                onClicked: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => MembershipScreen()));
+                }),
             const SizedBox(
               height: 20.0,
             ),
