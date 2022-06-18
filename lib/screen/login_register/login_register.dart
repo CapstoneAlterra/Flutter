@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gym_management_system/screen/login_register/register/register_screen.dart';
 import 'package:flutter_gym_management_system/widget/button_widget.dart';
+import 'package:flutter_gym_management_system/widget/button2_widget.dart';
 // import 'package:flutter_gym_management_system/widget/textbutton_widget.dart';
 
 import 'login/login_screen..dart';
@@ -46,9 +47,9 @@ class LoginRegister extends StatelessWidget {
                   }));
                 }),
             SizedBox(height: 20.0),
-            TextButton(
-              child: Text('Sudah Punya Akun?'),
-              onPressed: () {
+            Button2Widget(
+              text: ('Sudah Punya Akun?'),
+              onClicked: () {
                 Navigator.of(context)
                     .push(MaterialPageRoute(builder: (context) {
                   return LoginScreen();
