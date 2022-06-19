@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../../widget/button_widget.dart';
+import '../membership/membership_page_screen.dart';
+
 class HomepageHome extends StatefulWidget {
   const HomepageHome({Key? key}) : super(key: key);
 
@@ -10,6 +13,9 @@ class HomepageHome extends StatefulWidget {
 class _HomepageHomeState extends State<HomepageHome> {
   @override
   Widget build(BuildContext context) {
+    final ButtonStyle style =
+        ElevatedButton.styleFrom(textStyle: const TextStyle(fontSize: 20));
+
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
@@ -38,13 +44,16 @@ class _HomepageHomeState extends State<HomepageHome> {
               height: 15.0,
             ),
             ButtonWidget(
-                text: 'Join Membership',
-                onClicked: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => MembershipScreen()));
-                }),
+              text: 'Join Membership',
+              onClicked: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => MembershipScreen(),
+                  ),
+                );
+              },
+            ),
             const SizedBox(
               height: 20.0,
             ),

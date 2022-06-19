@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gym_management_system/screen/homepage/homepage_activity.dart';
 import 'package:flutter_gym_management_system/screen/homepage/homepage_catalog.dart';
+import 'package:flutter_gym_management_system/screen/homepage/homepage_profile.dart';
 import 'homepage_home.dart';
 
 class HomePageScreen extends StatefulWidget {
@@ -16,7 +17,7 @@ class _HomePageScreenState extends State<HomePageScreen> {
     const HomepageHome(),
     const HomepageActivity(),
     const HomepageCatalog(),
-    const HomepageHome(),
+    const HomepageProfile(),
   ];
 
   void _onItemTapped(int index) {
