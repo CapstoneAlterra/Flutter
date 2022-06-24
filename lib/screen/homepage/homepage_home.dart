@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-
-import '../../widget/button_widget.dart';
-import '../membership/membership_page_screen.dart';
+import 'package:flutter_gym_management_system/screen/membership/membership_page_screen.dart';
+import 'package:flutter_gym_management_system/widget/button_widget.dart';
 
 class HomepageHome extends StatefulWidget {
   const HomepageHome({Key? key}) : super(key: key);
@@ -13,9 +12,6 @@ class HomepageHome extends StatefulWidget {
 class _HomepageHomeState extends State<HomepageHome> {
   @override
   Widget build(BuildContext context) {
-    final ButtonStyle style =
-        ElevatedButton.styleFrom(textStyle: const TextStyle(fontSize: 20));
-
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
@@ -44,16 +40,13 @@ class _HomepageHomeState extends State<HomepageHome> {
               height: 15.0,
             ),
             ButtonWidget(
-              text: 'Join Membership',
-              onClicked: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => MembershipScreen(),
-                  ),
-                );
-              },
-            ),
+                text: 'Join Membership',
+                onClicked: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => MembershipScreen()));
+                }),
             const SizedBox(
               height: 20.0,
             ),
@@ -130,17 +123,25 @@ class _HomepageHomeState extends State<HomepageHome> {
               height: 10.0,
             ),
             SizedBox(
-              height: 200,
-              child: ListView(
-                scrollDirection: Axis.horizontal,
-                children: <Widget>[
+                height: 200,
+                child: ListView(scrollDirection: Axis.horizontal, children: <
+                    Widget>[
                   Container(
                     width: 170,
                     child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Image.asset('assets/images/banner_kelas.jpg',
-                              fit: BoxFit.fill),
+                          Positioned(
+                            child: InkWell(
+                              onTap: () {},
+                              child: Column(
+                                children: [
+                                  Image.asset('assets/images/banner_kelas.jpg',
+                                      fit: BoxFit.fill),
+                                ],
+                              ),
+                            ),
+                          ),
                           Container(
                             margin: const EdgeInsets.symmetric(
                                 horizontal: 7.0, vertical: 5.0),
@@ -236,8 +237,15 @@ class _HomepageHomeState extends State<HomepageHome> {
                     child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Image.asset('assets/images/banner_kelas.jpg',
-                              fit: BoxFit.fill),
+                          Positioned(
+                            child: InkWell(
+                              onTap: () {},
+                              child: Column(children: [
+                                Image.asset('assets/images/banner_kelas.jpg',
+                                    fit: BoxFit.fill),
+                              ]),
+                            ),
+                          ),
                           Container(
                             margin: const EdgeInsets.symmetric(
                                 horizontal: 7.0, vertical: 5.0),
@@ -324,6 +332,9 @@ class _HomepageHomeState extends State<HomepageHome> {
                       ),
                       borderRadius: BorderRadius.circular(3.0),
                     ),
+                  ),
+                  SizedBox(
+                    height: 10,
                   ),
                   const SizedBox(
                     width: 10.0,
@@ -333,8 +344,15 @@ class _HomepageHomeState extends State<HomepageHome> {
                     child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Image.asset('assets/images/banner_kelas.jpg',
-                              fit: BoxFit.fill),
+                          Positioned(
+                            child: InkWell(
+                              onTap: () {},
+                              child: Column(children: [
+                                Image.asset('assets/images/banner_kelas.jpg',
+                                    fit: BoxFit.fill),
+                              ]),
+                            ),
+                          ),
                           Container(
                             margin: const EdgeInsets.symmetric(
                                 horizontal: 7.0, vertical: 5.0),
@@ -422,11 +440,9 @@ class _HomepageHomeState extends State<HomepageHome> {
                       borderRadius: BorderRadius.circular(3.0),
                     ),
                   ),
-                ],
-              ),
-            ),
-            const SizedBox(
-              height: 20.0,
+                ])),
+            SizedBox(
+              height: 10,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
