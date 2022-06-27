@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gym_management_system/screen/membership/membership_page_screen.dart';
 import 'package:flutter_gym_management_system/widget/button_widget.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HomepageHome extends StatefulWidget {
   const HomepageHome({Key? key}) : super(key: key);
@@ -39,14 +40,57 @@ class _HomepageHomeState extends State<HomepageHome> {
             const SizedBox(
               height: 15.0,
             ),
-            ButtonWidget(
-                text: 'Join Membership',
-                onClicked: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => MembershipScreen()));
-                }),
+            Container(
+                color: Color.fromARGB(255, 237, 5, 5),
+                width: double.infinity,
+                // height: 100.0,
+                child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Row(children: [
+                        Padding(padding: EdgeInsets.symmetric(horizontal: 20)),
+                        Column(
+                          children: [
+                            SizedBox(height: 25),
+                            Text(
+                              'Join Membership Now',
+                              style: GoogleFonts.robotoCondensed(
+                                fontSize: 20.0,
+                                fontWeight: FontWeight.w600,
+                                color: Colors.white,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 5,
+                            ),
+                            Text(
+                              'Get your new experience with us',
+                              style: GoogleFonts.robotoCondensed(
+                                fontSize: 18.0,
+                                color: Colors.white70,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 20,
+                            ),
+                          ],
+                        ),
+                        Padding(padding: EdgeInsets.symmetric(horizontal: 9)),
+                        IconButton(
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => MembershipScreen()));
+                          },
+                          icon: Icon(
+                            Icons.arrow_circle_right_outlined,
+                            size: 30,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ]),
+                    ])),
             const SizedBox(
               height: 20.0,
             ),
