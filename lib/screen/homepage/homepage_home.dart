@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gym_management_system/screen/homepage/notification/notification_screen.dart';
 import 'package:flutter_gym_management_system/screen/membership/membership_page_screen.dart';
 import 'package:flutter_gym_management_system/widget/button_widget.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -20,6 +21,17 @@ class _HomepageHomeState extends State<HomepageHome> {
           'assets/images/Logo.png',
           height: 50.0,
         ),
+        actions: <Widget>[
+          IconButton(
+            icon: const Icon(Icons.notifications_outlined, color: Colors.white),
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => NotificationScreen()));
+            },
+          ),
+        ],
         backgroundColor: const Color.fromARGB(255, 237, 5, 5),
       ),
       backgroundColor: Colors.white,
