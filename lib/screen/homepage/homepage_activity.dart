@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../../widget/customdropdownbutton2.dart';
+import '../detail/detailactivity_screen.dart';
+import '../membership/membership_page_screen.dart';
 
 class HomepageActivity extends StatefulWidget {
   const HomepageActivity({Key? key}) : super(key: key);
@@ -46,88 +48,102 @@ class _HomepageActivityState extends State<HomepageActivity> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Container(
-                    width: 185,
-                    height: 200,
-                    child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Image.asset('assets/images/banner_kelas.jpg',
-                              fit: BoxFit.fill),
-                          Container(
-                            margin: const EdgeInsets.symmetric(
-                                horizontal: 7.0, vertical: 5.0),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: const [
-                                Text(
-                                  'Cardio',
-                                  style: TextStyle(
-                                    color: Colors.black,
-                                    fontSize: 15.0,
-                                    fontWeight: FontWeight.w300,
-                                  ),
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Container(
+                      width: 185,
+                      height: 200,
+                      child: InkWell(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => DetailActivity()));
+                        },
+                        child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Image.asset('assets/images/banner_kelas.jpg',
+                                  fit: BoxFit.fill),
+                              Container(
+                                margin: const EdgeInsets.symmetric(
+                                    horizontal: 7.0, vertical: 5.0),
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: const [
+                                    Text(
+                                      'Cardio',
+                                      style: TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 15.0,
+                                        fontWeight: FontWeight.w300,
+                                      ),
+                                    ),
+                                    Text(
+                                      '22/07/22',
+                                      style: TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 15.0,
+                                        fontWeight: FontWeight.w300,
+                                      ),
+                                    ),
+                                  ],
                                 ),
-                                Text(
-                                  '22/07/22',
-                                  style: TextStyle(
-                                    color: Colors.black,
-                                    fontSize: 15.0,
-                                    fontWeight: FontWeight.w300,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                          Container(
-                            margin: const EdgeInsets.symmetric(horizontal: 7.0),
-                            child: const Text(
-                              'BodyCombat',
-                              style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 15.0,
-                                fontWeight: FontWeight.w600,
                               ),
-                            ),
-                          ),
-                          const SizedBox(
-                            height: 5.0,
-                          ),
-                          Container(
-                            margin: const EdgeInsets.symmetric(horizontal: 7.0),
-                            child: Row(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: const [
-                                Icon(
-                                  Icons.access_time,
-                                  color: Colors.black,
-                                  size: 19.0,
-                                ),
-                                SizedBox(
-                                  width: 5.0,
-                                ),
-                                Text(
-                                  '00:00',
+                              Container(
+                                margin:
+                                    const EdgeInsets.symmetric(horizontal: 7.0),
+                                child: const Text(
+                                  'BodyCombat',
                                   style: TextStyle(
-                                    color: Colors.grey,
-                                    fontSize: 17.0,
-                                    fontWeight: FontWeight.w400,
+                                    color: Colors.black,
+                                    fontSize: 15.0,
+                                    fontWeight: FontWeight.w600,
                                   ),
                                 ),
-                              ],
-                            ),
-                          ),
-                          const SizedBox(
-                            height: 5.0,
-                          ),
-                        ]),
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      border: Border.all(
-                        color: Colors.grey,
-                        width: 1,
+                              ),
+                              const SizedBox(
+                                height: 5.0,
+                              ),
+                              Container(
+                                margin:
+                                    const EdgeInsets.symmetric(horizontal: 7.0),
+                                child: Row(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: const [
+                                    Icon(
+                                      Icons.access_time,
+                                      color: Colors.black,
+                                      size: 19.0,
+                                    ),
+                                    SizedBox(
+                                      width: 5.0,
+                                    ),
+                                    Text(
+                                      '00:00',
+                                      style: TextStyle(
+                                        color: Colors.grey,
+                                        fontSize: 17.0,
+                                        fontWeight: FontWeight.w400,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 5.0,
+                              ),
+                            ]),
                       ),
-                      borderRadius: BorderRadius.circular(3.0),
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        border: Border.all(
+                          color: Colors.grey,
+                          width: 1,
+                        ),
+                        borderRadius: BorderRadius.circular(3.0),
+                      ),
                     ),
                   ),
                   Container(
