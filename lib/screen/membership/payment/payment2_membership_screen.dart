@@ -146,6 +146,68 @@ class Payment2Screen extends StatelessWidget {
                       borderRadius: BorderRadius.circular(8.0),
                     ),
                   ),
+                  SizedBox(height: 15),
+                  Column(
+                    children: <Widget>[
+                      Container(
+                        child: ExpansionTile(
+                          title: Text('Pembayaran transfer ATM'),
+                          children: <Widget>[
+                            ListTile(
+                                title: Text(
+                              ' 1. Pilih Transaksi lain > Transfer \n 2. Masukkan Nomor Rekening 008+897101272518129 \n 3. Periksa informasi transaksi \n 4. Jika informasi benar tekan "YA"',
+                              style: GoogleFonts.robotoCondensed(),
+                            )),
+                          ],
+                        ),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          border: Border.all(
+                            color: Colors.grey,
+                            width: 1,
+                          ),
+                          borderRadius: BorderRadius.circular(8.0),
+                        ),
+                      ),
+                      SizedBox(height: 10),
+                      Container(
+                        child: ExpansionTile(
+                          title: Text('Pembayaran transfer iBanking'),
+                          children: <Widget>[
+                            ListTile(title: Text('This is tile number 1')),
+                          ],
+                        ),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          border: Border.all(
+                            color: Colors.grey,
+                            width: 1,
+                          ),
+                          borderRadius: BorderRadius.circular(8.0),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Container(
+                        child: ExpansionTile(
+                          title: Text('Pembayaran transfer mBanking'),
+                          children: <Widget>[
+                            ListTile(title: Text('This is tile number 1')),
+                          ],
+                        ),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          border: Border.all(
+                            color: Colors.grey,
+                            width: 1,
+                          ),
+                          borderRadius: BorderRadius.circular(8.0),
+                        ),
+                      ),
+                    ],
+                  ),
+                  
                   SizedBox(
                     height: 70,
                   ),
