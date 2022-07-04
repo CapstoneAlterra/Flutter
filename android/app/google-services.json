@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "684541878837",
+    "project_id": "gym-system-management",
+    "storage_bucket": "gym-system-management.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:684541878837:android:9424289da23dced623877c",
+        "android_client_info": {
+          "package_name": "com.example.flutter_gym_management_system"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "684541878837-8jt4tfoa2rfptgnracevrf25qb7s4ecc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBhgvi5yB2s_XSTSnxVI3gMDklYk_f0Aw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "684541878837-8jt4tfoa2rfptgnracevrf25qb7s4ecc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
