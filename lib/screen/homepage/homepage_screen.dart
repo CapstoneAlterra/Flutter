@@ -60,7 +60,7 @@ class _HomePageScreenState extends State<HomePageScreen> {
               Icons.person,
               size: 30,
             ),
-            label: 'Account',
+            label: 'Profile',
           ),
         ],
         currentIndex: _selectedIndex,
