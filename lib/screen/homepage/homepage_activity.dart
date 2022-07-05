@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../widget/customdropdownbutton2.dart';
 import '../membership/membership_page_screen.dart';
 import 'detail/detailactivity_screen.dart';
+import 'notification/notification_screen.dart';
 
 class HomepageActivity extends StatefulWidget {
   const HomepageActivity({Key? key}) : super(key: key);
@@ -21,6 +22,17 @@ class _HomepageActivityState extends State<HomepageActivity> {
           'assets/images/Logo.png',
           height: 50.0,
         ),
+        actions: <Widget>[
+          IconButton(
+            icon: const Icon(Icons.notifications_outlined, color: Colors.white),
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => NotificationScreen()));
+            },
+          ),
+        ],
         backgroundColor: const Color.fromARGB(255, 237, 5, 5),
       ),
       backgroundColor: Colors.white,

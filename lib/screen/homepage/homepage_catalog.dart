@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../widget/customdropdownbutton2.dart';
+import 'notification/notification_screen.dart';
 
 class HomepageCatalog extends StatefulWidget {
   const HomepageCatalog({Key? key}) : super(key: key);
@@ -35,6 +36,17 @@ class _HomepageCatalogState extends State<HomepageCatalog> {
           'assets/images/Logo.png',
           height: 50.0,
         ),
+        actions: <Widget>[
+          IconButton(
+            icon: const Icon(Icons.notifications_outlined, color: Colors.white),
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => NotificationScreen()));
+            },
+          ),
+        ],
         backgroundColor: const Color.fromARGB(255, 237, 5, 5),
       ),
       backgroundColor: Colors.white,
@@ -80,12 +92,34 @@ class _HomepageCatalogState extends State<HomepageCatalog> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
-                    width: 185,
+                    width: 180,
                     child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Image.asset('assets/images/banner_kelas.jpg',
-                              fit: BoxFit.fill),
+                          Stack(
+                            children: [
+                              Image.asset('assets/images/banner_kelas.jpg',
+                                  fit: BoxFit.fill),
+                              Container(
+                                padding: EdgeInsets.symmetric(
+                                    horizontal: 5.0, vertical: 5.0),
+                                margin: EdgeInsets.symmetric(
+                                    horizontal: 3.0, vertical: 3.0),
+                                child: Text(
+                                  'Online',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 15.0,
+                                    fontWeight: FontWeight.w400,
+                                  ),
+                                ),
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(10),
+                                  color: Color.fromARGB(255, 0, 202, 229),
+                                ),
+                              ),
+                            ],
+                          ),
                           Container(
                             margin: const EdgeInsets.symmetric(
                                 horizontal: 7.0, vertical: 5.0),
@@ -177,12 +211,34 @@ class _HomepageCatalogState extends State<HomepageCatalog> {
                     ),
                   ),
                   Container(
-                    width: 185,
+                    width: 180,
                     child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Image.asset('assets/images/banner_kelas.jpg',
-                              fit: BoxFit.fill),
+                          Stack(
+                            children: [
+                              Image.asset('assets/images/banner_kelas.jpg',
+                                  fit: BoxFit.fill),
+                              Container(
+                                padding: EdgeInsets.symmetric(
+                                    horizontal: 5.0, vertical: 5.0),
+                                margin: EdgeInsets.symmetric(
+                                    horizontal: 3.0, vertical: 3.0),
+                                child: Text(
+                                  'Offline',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 15.0,
+                                    fontWeight: FontWeight.w400,
+                                  ),
+                                ),
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(10),
+                                  color: Color.fromARGB(255, 234, 5, 5),
+                                ),
+                              ),
+                            ],
+                          ),
                           Container(
                             margin: const EdgeInsets.symmetric(
                                 horizontal: 7.0, vertical: 5.0),
