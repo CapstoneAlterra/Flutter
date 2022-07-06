@@ -144,27 +144,30 @@ class _MembershipScreenState extends State<MembershipScreen> {
                         // },
                         children: [
                           Padding(
-                            padding: EdgeInsets.symmetric(horizontal: 16.0),
+                            padding: EdgeInsets.symmetric(
+                                horizontal: 10.0, vertical: 10.0),
                             child: Text('1 Month \n \n Rp. 100.000',
                                 style: GoogleFonts.robotoCondensed(
                                   color: Colors.grey[400],
-                                  fontWeight: FontWeight.w400,
+                                  fontWeight: FontWeight.w600,
                                 )),
                           ),
                           Padding(
-                            padding: EdgeInsets.symmetric(horizontal: 16.0),
+                            padding: EdgeInsets.symmetric(
+                                horizontal: 10.0, vertical: 10.0),
                             child: Text('4 Month \n \n Rp. 400.000',
                                 style: TextStyle(
                                   color: Colors.grey[400],
-                                  fontWeight: FontWeight.w400,
+                                  fontWeight: FontWeight.w600,
                                 )),
                           ),
                           Padding(
-                            padding: EdgeInsets.symmetric(horizontal: 16.0),
+                            padding: EdgeInsets.symmetric(
+                                horizontal: 10.0, vertical: 10.0),
                             child: Text('8 Month \n \n Rp. 800.000',
                                 style: TextStyle(
                                   color: Colors.grey[400],
-                                  fontWeight: FontWeight.w400,
+                                  fontWeight: FontWeight.w600,
                                 )),
                           ),
                         ],

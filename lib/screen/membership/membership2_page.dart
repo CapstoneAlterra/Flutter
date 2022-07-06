@@ -139,7 +139,7 @@ class _Membership2ScreenState extends State<Membership2Screen> {
                                     SizedBox(height: 7),
                                     Text('Unlimited Radio Class',
                                         style: GoogleFonts.robotoCondensed(
-                                          color: Colors.grey,
+                                          color: Colors.black,
                                         )),
                                     Text('+ 45.000 / month',
                                         style: GoogleFonts.robotoCondensed(
@@ -155,7 +155,7 @@ class _Membership2ScreenState extends State<Membership2Screen> {
                                     SizedBox(height: 7),
                                     Text('Unlimited Strength Class',
                                         style: GoogleFonts.robotoCondensed(
-                                          color: Colors.grey,
+                                          color: Colors.black,
                                         )),
                                     Text('+ 45.000 / month',
                                         style: GoogleFonts.robotoCondensed(
@@ -171,7 +171,7 @@ class _Membership2ScreenState extends State<Membership2Screen> {
                                     SizedBox(height: 7),
                                     Text('Unlimited Dance Class',
                                         style: GoogleFonts.robotoCondensed(
-                                          color: Colors.grey,
+                                          color: Colors.black,
                                         )),
                                     Text('+ 45.000',
                                         style: GoogleFonts.robotoCondensed(

@@ -5,6 +5,8 @@ import 'package:flutter_gym_management_system/screen/membership/payment/payment_
 import 'package:flutter_gym_management_system/widget/membership_form.dart';
 
 import '../../widget/button_widget.dart';
+import '../../widget/customdropdownbutton.dart';
+import '../../widget/customdropdownbutton2.dart';
 
 // enum SingingCharacter { lafayette, jefferson }
 
@@ -16,6 +18,9 @@ class Membership3Screen extends StatefulWidget {
 }
 
 class _Membership3ScreenState extends State<Membership3Screen> {
+  String? selectedGender;
+  var gender = ['laki-laki', 'perempuan'];
+
   // SingingCharacter? _character = SingingCharacter.lafayette;
   @override
   Widget build(BuildContext context) {
@@ -40,6 +45,7 @@ class _Membership3ScreenState extends State<Membership3Screen> {
             padding: EdgeInsets.symmetric(horizontal: 20),
             child: Column(
               children: [
+                SizedBox(height: 20),
                 Text('Personal Details',
                     style: TextStyle(
                         fontSize: 20.0,
@@ -47,6 +53,19 @@ class _Membership3ScreenState extends State<Membership3Screen> {
                         color: Colors.black)),
                 MembersipFormWidget(hintText: 'No KTP'),
                 MembersipFormWidget(hintText: 'Nama Lengkap'),
+                SizedBox(
+                  height: 10,
+                ),
+                CustomDropdownButton(
+                  hint: 'Gender',
+                  dropdownItems: gender,
+                  value: selectedGender,
+                  onChanged: (value) {
+                    setState(() {
+                      selectedGender = value;
+                    });
+                  },
+                ),
                 SizedBox(
                   height: 10,
                 ),
@@ -115,6 +134,9 @@ class _Membership3ScreenState extends State<Membership3Screen> {
                         ),
                       ),
                     ),
+                  ),
+                  SizedBox(
+                    width: 10,
                   ),
                   Expanded(
                     child: Container(

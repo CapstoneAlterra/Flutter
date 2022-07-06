@@ -17,6 +17,7 @@ class FormProfile extends StatelessWidget {
           height: 5.0,
         ),
         Container(
+          width: double.infinity,
           decoration: BoxDecoration(
             border: Border.all(
               color: Colors.grey,

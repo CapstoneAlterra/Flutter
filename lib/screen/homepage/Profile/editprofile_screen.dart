@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gym_management_system/screen/homepage/Profile/change_password_screen.dart';
+import 'package:flutter_gym_management_system/screen/homepage/homepage_profil.dart';
 import 'package:flutter_gym_management_system/widget/form_widget.dart';
 import 'package:flutter_gym_management_system/widget/formprofile_widget.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+import '../../../widget/button_widget.dart';
 
 class EditProfile extends StatefulWidget {
   const EditProfile({Key? key}) : super(key: key);
@@ -133,6 +136,17 @@ class _EditProfileState extends State<EditProfile> {
                                 child: FormProfile(hintText: '08654321234')),
                           ],
                         ),
+                        SizedBox(height: 50),
+                        ButtonWidget(
+                            text: 'Save',
+                            onClicked: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => HomepageProfile(),
+                                ),
+                              );
+                            }),
                       ])))
         ]));
   }

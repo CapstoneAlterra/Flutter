@@ -42,13 +42,15 @@ class _OrderHistoryState extends State<OrderHistory> {
                       ),
                     ),
                     Container(
-                        height: 253.5, //height of TabBarView
+                        height: 270, //height of TabBarView
                         decoration: BoxDecoration(
-                            border: Border(
-                                top: BorderSide(
-                                    color: Colors.grey, width: 0.5))),
+                          border: Border(
+                              top: BorderSide(color: Colors.grey, width: 0.5)),
+                        ),
                         child: TabBarView(children: <Widget>[
                           Container(
+                            margin: EdgeInsets.symmetric(vertical: 5.0),
+                            padding: EdgeInsets.symmetric(horizontal: 5.0),
                             child: InkWell(
                               onTap: () {
                                 Navigator.push(
@@ -107,109 +109,19 @@ class _OrderHistoryState extends State<OrderHistory> {
                             ),
                             decoration: BoxDecoration(
                               color: Colors.white,
-                              border: Border.all(
-                                color: Colors.grey,
-                                width: 1,
-                              ),
-                              borderRadius: BorderRadius.circular(8.0),
                             ),
                           ),
                           Container(
+                            margin: EdgeInsets.symmetric(vertical: 5.0),
+                            padding: EdgeInsets.symmetric(horizontal: 5.0),
                             child: InkWell(
                               onTap: () {
-                                showModalBottomSheet<void>(
-                                    context: context,
-                                    builder: (BuildContext context) {
-                                      return Container(
-                                        padding: EdgeInsets.symmetric(
-                                            horizontal: 30),
-                                        height: 200,
-                                        color: Colors.white,
-                                        child: Column(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.center,
-                                          // mainAxisSize: MainAxisSize.min,
-                                          children: <Widget>[
-                                            Text(
-                                              '                                        Zoom Meeting',
-                                              style:
-                                                  GoogleFonts.robotoCondensed(
-                                                fontWeight: FontWeight.w600,
-                                              ),
-                                            ),
-                                            SizedBox(height: 10),
-                                            Text(
-                                              'Hari               : Monday, 2 June 2022',
-                                              style:
-                                                  GoogleFonts.robotoCondensed(),
-                                            ),
-                                            SizedBox(height: 5),
-                                            Text(
-                                              'Pukul             : 21.00 - 22.00',
-                                              style:
-                                                  GoogleFonts.robotoCondensed(),
-                                            ),
-                                            SizedBox(height: 5),
-                                            Text(
-                                              'Topic             : Class BodyCombat (Cardio)',
-                                              style:
-                                                  GoogleFonts.robotoCondensed(),
-                                            ),
-                                            SizedBox(height: 5),
-                                            Row(
-                                              children: [
-                                                Text(
-                                                  'Link               : ',
-                                                  style: GoogleFonts
-                                                      .robotoCondensed(),
-                                                ),
-                                                Text(
-                                                  'https://zoom.us/j/953619853927 ..',
-                                                  style: GoogleFonts
-                                                      .robotoCondensed(
-                                                          color: Colors.blue),
-                                                ),
-                                                InkWell(
-                                                    onTap: () {
-                                                      Clipboard.setData(
-                                                              ClipboardData(
-                                                                  text:
-                                                                      'https://zoom.us/j/953619853927 ..'))
-                                                          .then((value) => ScaffoldMessenger
-                                                                  .of(context)
-                                                              .showSnackBar(SnackBar(
-                                                                  content: Text(
-                                                                      'Copied'))));
-                                                    },
-                                                    child: Icon(
-                                                      Icons.copy,
-                                                      color: Colors.grey,
-                                                    )),
-                                              ],
-                                            ),
-                                            SizedBox(height: 5),
-                                            Row(
-                                              children: [
-                                                Text(
-                                                  'Meeting ID   : ',
-                                                  style: GoogleFonts
-                                                      .robotoCondensed(),
-                                                ),
-                                                Text(
-                                                  '334290019008',
-                                                  style: GoogleFonts
-                                                      .robotoCondensed(
-                                                          color: Colors.blue),
-                                                ),
-                                              ],
-                                            ),
-                                            SizedBox(height: 5),
-                                          ],
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                        ),
-                                      );
-                                    });
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => PaymentClass(),
+                                  ),
+                                );
                               },
                               child: Column(
                                 children: [
@@ -259,11 +171,7 @@ class _OrderHistoryState extends State<OrderHistory> {
                               ),
                             ),
                             decoration: BoxDecoration(
-                              border: Border.all(
-                                color: Colors.grey,
-                                width: 1,
-                              ),
-                              borderRadius: BorderRadius.circular(8.0),
+                              color: Colors.white,
                             ),
                           ),
                         ]))

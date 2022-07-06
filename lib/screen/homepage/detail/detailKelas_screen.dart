@@ -91,7 +91,7 @@ class DetailKelas extends StatelessWidget {
                         ),
                       ),
                       SizedBox(
-                        height: 10,
+                        width: 10,
                       ),
                       Container(
                         padding: EdgeInsets.symmetric(horizontal: 20),

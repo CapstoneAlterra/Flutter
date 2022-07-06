@@ -75,8 +75,30 @@ class _HomepageActivityState extends State<HomepageActivity> {
                         child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Image.asset('assets/images/banner_kelas.jpg',
-                                  fit: BoxFit.fill),
+                              Stack(
+                                children: [
+                                  Image.asset('assets/images/banner_kelas.jpg',
+                                      fit: BoxFit.fill),
+                                  Container(
+                                    padding: EdgeInsets.symmetric(
+                                        horizontal: 5.0, vertical: 5.0),
+                                    margin: EdgeInsets.symmetric(
+                                        horizontal: 3.0, vertical: 3.0),
+                                    child: Text(
+                                      'Offline',
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 15.0,
+                                        fontWeight: FontWeight.w400,
+                                      ),
+                                    ),
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(10),
+                                      color: Color.fromARGB(255, 234, 5, 5),
+                                    ),
+                                  ),
+                                ],
+                              ),
                               Container(
                                 margin: const EdgeInsets.symmetric(
                                     horizontal: 7.0, vertical: 5.0),
@@ -164,8 +186,30 @@ class _HomepageActivityState extends State<HomepageActivity> {
                     child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Image.asset('assets/images/banner_kelas.jpg',
-                              fit: BoxFit.fill),
+                          Stack(
+                            children: [
+                              Image.asset('assets/images/banner_kelas.jpg',
+                                  fit: BoxFit.fill),
+                              Container(
+                                padding: EdgeInsets.symmetric(
+                                    horizontal: 5.0, vertical: 5.0),
+                                margin: EdgeInsets.symmetric(
+                                    horizontal: 3.0, vertical: 3.0),
+                                child: Text(
+                                  'Online',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 15.0,
+                                    fontWeight: FontWeight.w400,
+                                  ),
+                                ),
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(10),
+                                  color: Color.fromARGB(255, 0, 202, 229),
+                                ),
+                              ),
+                            ],
+                          ),
                           Container(
                             margin: const EdgeInsets.symmetric(
                                 horizontal: 7.0, vertical: 5.0),
