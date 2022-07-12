@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../../widget/customdropdownbutton2.dart';
 import 'notification/notification_screen.dart';
@@ -107,7 +108,7 @@ class _HomepageCatalogState extends State<HomepageCatalog> {
                                     horizontal: 3.0, vertical: 3.0),
                                 child: Text(
                                   'Online',
-                                  style: TextStyle(
+                                  style: GoogleFonts.robotoCondensed(
                                     color: Colors.white,
                                     fontSize: 15.0,
                                     fontWeight: FontWeight.w400,
@@ -125,10 +126,10 @@ class _HomepageCatalogState extends State<HomepageCatalog> {
                                 horizontal: 7.0, vertical: 5.0),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: const [
+                              children: [
                                 Text(
                                   'Cardio',
-                                  style: TextStyle(
+                                  style: GoogleFonts.robotoCondensed(
                                     color: Colors.black,
                                     fontSize: 15.0,
                                     fontWeight: FontWeight.w300,
@@ -136,7 +137,7 @@ class _HomepageCatalogState extends State<HomepageCatalog> {
                                 ),
                                 Text(
                                   '22/07/22',
-                                  style: TextStyle(
+                                  style: GoogleFonts.robotoCondensed(
                                     color: Colors.black,
                                     fontSize: 15.0,
                                     fontWeight: FontWeight.w300,
@@ -147,9 +148,9 @@ class _HomepageCatalogState extends State<HomepageCatalog> {
                           ),
                           Container(
                             margin: const EdgeInsets.symmetric(horizontal: 7.0),
-                            child: const Text(
+                            child: Text(
                               'BodyCombat',
-                              style: TextStyle(
+                              style: GoogleFonts.robotoCondensed(
                                 color: Colors.black,
                                 fontSize: 15.0,
                                 fontWeight: FontWeight.w600,
@@ -163,7 +164,7 @@ class _HomepageCatalogState extends State<HomepageCatalog> {
                             margin: const EdgeInsets.symmetric(horizontal: 7.0),
                             child: Row(
                               crossAxisAlignment: CrossAxisAlignment.start,
-                              children: const [
+                              children: [
                                 Icon(
                                   Icons.access_time,
                                   color: Colors.black,
@@ -174,7 +175,7 @@ class _HomepageCatalogState extends State<HomepageCatalog> {
                                 ),
                                 Text(
                                   '00:00',
-                                  style: TextStyle(
+                                  style: GoogleFonts.robotoCondensed(
                                     color: Colors.grey,
                                     fontSize: 17.0,
                                     fontWeight: FontWeight.w400,
@@ -188,9 +189,9 @@ class _HomepageCatalogState extends State<HomepageCatalog> {
                           ),
                           Container(
                             margin: const EdgeInsets.symmetric(horizontal: 7.0),
-                            child: const Text(
+                            child: Text(
                               'Rp. 999.999.999',
-                              style: TextStyle(
+                              style: GoogleFonts.robotoCondensed(
                                 color: Colors.red,
                                 fontSize: 17.0,
                                 fontWeight: FontWeight.w500,
@@ -226,7 +227,7 @@ class _HomepageCatalogState extends State<HomepageCatalog> {
                                     horizontal: 3.0, vertical: 3.0),
                                 child: Text(
                                   'Offline',
-                                  style: TextStyle(
+                                  style: GoogleFonts.robotoCondensed(
                                     color: Colors.white,
                                     fontSize: 15.0,
                                     fontWeight: FontWeight.w400,
@@ -244,10 +245,10 @@ class _HomepageCatalogState extends State<HomepageCatalog> {
                                 horizontal: 7.0, vertical: 5.0),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: const [
+                              children: [
                                 Text(
                                   'Cardio',
-                                  style: TextStyle(
+                                  style: GoogleFonts.robotoCondensed(
                                     color: Colors.black,
                                     fontSize: 15.0,
                                     fontWeight: FontWeight.w300,
@@ -255,7 +256,7 @@ class _HomepageCatalogState extends State<HomepageCatalog> {
                                 ),
                                 Text(
                                   '22/07/22',
-                                  style: TextStyle(
+                                  style: GoogleFonts.robotoCondensed(
                                     color: Colors.black,
                                     fontSize: 15.0,
                                     fontWeight: FontWeight.w300,
@@ -266,9 +267,9 @@ class _HomepageCatalogState extends State<HomepageCatalog> {
                           ),
                           Container(
                             margin: const EdgeInsets.symmetric(horizontal: 7.0),
-                            child: const Text(
+                            child: Text(
                               'BodyCombat',
-                              style: TextStyle(
+                              style: GoogleFonts.robotoCondensed(
                                 color: Colors.black,
                                 fontSize: 15.0,
                                 fontWeight: FontWeight.w600,
@@ -282,7 +283,7 @@ class _HomepageCatalogState extends State<HomepageCatalog> {
                             margin: const EdgeInsets.symmetric(horizontal: 7.0),
                             child: Row(
                               crossAxisAlignment: CrossAxisAlignment.start,
-                              children: const [
+                              children: [
                                 Icon(
                                   Icons.access_time,
                                   color: Colors.black,
@@ -293,7 +294,7 @@ class _HomepageCatalogState extends State<HomepageCatalog> {
                                 ),
                                 Text(
                                   '00:00',
-                                  style: TextStyle(
+                                  style: GoogleFonts.robotoCondensed(
                                     color: Colors.grey,
                                     fontSize: 17.0,
                                     fontWeight: FontWeight.w400,
@@ -307,9 +308,9 @@ class _HomepageCatalogState extends State<HomepageCatalog> {
                           ),
                           Container(
                             margin: const EdgeInsets.symmetric(horizontal: 7.0),
-                            child: const Text(
+                            child: Text(
                               'Rp. 999.999.999',
-                              style: TextStyle(
+                              style: GoogleFonts.robotoCondensed(
                                 color: Colors.red,
                                 fontSize: 17.0,
                                 fontWeight: FontWeight.w500,

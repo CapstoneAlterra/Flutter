@@ -28,9 +28,9 @@ class _HomepageProfileState extends State<HomepageProfile> {
         automaticallyImplyLeading: false,
         backgroundColor: Colors.white,
         elevation: 0,
-        title: const Text(
+        title: Text(
           'Profile',
-          style: TextStyle(
+          style: GoogleFonts.robotoCondensed(
             color: Colors.black,
             fontSize: 20.0,
             fontWeight: FontWeight.w600,
@@ -64,9 +64,9 @@ class _HomepageProfileState extends State<HomepageProfile> {
                   const SizedBox(
                     height: 10.0,
                   ),
-                  const Text(
+                  Text(
                     'Hallo, {Username}',
-                    style: TextStyle(
+                    style: GoogleFonts.robotoCondensed(
                       color: Colors.black,
                       fontSize: 22.0,
                       fontWeight: FontWeight.w600,

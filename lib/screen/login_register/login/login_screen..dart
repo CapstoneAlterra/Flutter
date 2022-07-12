@@ -52,7 +52,7 @@ class _LoginScreenState extends State<LoginScreen> {
           ),
           title: Text(
             'Masuk',
-            style: TextStyle(
+            style: GoogleFonts.robotoCondensed(
               color: Colors.black,
               fontSize: 20.0,
               fontWeight: FontWeight.w600,

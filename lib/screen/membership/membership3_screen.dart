@@ -3,6 +3,7 @@ import 'package:flutter_gym_management_system/screen/membership/payment/payment2
 import 'package:flutter_gym_management_system/screen/membership/payment/payment_screen.dart';
 // import 'package:flutter_gym_management_system/screen/membership/payment_membership_screen.dart';
 import 'package:flutter_gym_management_system/widget/membership_form.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../../widget/button_widget.dart';
 import '../../widget/customdropdownbutton.dart';
@@ -30,9 +31,9 @@ class _Membership3ScreenState extends State<Membership3Screen> {
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0,
-        title: const Text(
+        title: Text(
           'Membership',
-          style: TextStyle(
+          style: GoogleFonts.robotoCondensed(
             color: Colors.black,
             fontSize: 20.0,
             fontWeight: FontWeight.w600,
@@ -47,7 +48,7 @@ class _Membership3ScreenState extends State<Membership3Screen> {
               children: [
                 SizedBox(height: 20),
                 Text('Personal Details',
-                    style: TextStyle(
+                    style: GoogleFonts.robotoCondensed(
                         fontSize: 20.0,
                         fontWeight: FontWeight.w600,
                         color: Colors.black)),
@@ -101,7 +102,7 @@ class _Membership3ScreenState extends State<Membership3Screen> {
                   height: 10.0,
                 ),
                 Text('Contact Details',
-                    style: TextStyle(
+                    style: GoogleFonts.robotoCondensed(
                         fontSize: 20.0,
                         fontWeight: FontWeight.w600,
                         color: Colors.black)),
@@ -127,7 +128,7 @@ class _Membership3ScreenState extends State<Membership3Screen> {
                             vertical: 15.0,
                           ),
                           hintText: 'Kota',
-                          hintStyle: TextStyle(
+                          hintStyle: GoogleFonts.robotoCondensed(
                             color: Colors.grey[400],
                             fontSize: 15.0,
                           ),
@@ -155,7 +156,7 @@ class _Membership3ScreenState extends State<Membership3Screen> {
                             vertical: 15.0,
                           ),
                           hintText: 'Kode Pos',
-                          hintStyle: TextStyle(
+                          hintStyle: GoogleFonts.robotoCondensed(
                             color: Colors.grey[400],
                             fontSize: 15.0,
                           ),

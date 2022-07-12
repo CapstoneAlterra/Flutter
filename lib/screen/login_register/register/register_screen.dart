@@ -24,9 +24,9 @@ class RegisterScreen extends StatelessWidget {
               Navigator.pop(context);
             },
           ),
-          title: const Text(
+          title: Text(
             'Daftar',
-            style: TextStyle(
+            style: GoogleFonts.robotoCondensed(
               color: Colors.black,
               fontSize: 20.0,
               fontWeight: FontWeight.w600,

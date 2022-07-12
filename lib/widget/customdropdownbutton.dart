@@ -1,6 +1,7 @@
 import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class CustomDropdownButton extends StatelessWidget {
   final String hint;
@@ -72,7 +73,7 @@ class CustomDropdownButton extends StatelessWidget {
             hint,
             overflow: TextOverflow.ellipsis,
             maxLines: 1,
-            style: TextStyle(
+            style: GoogleFonts.robotoCondensed(
               fontSize: 15,
               color: Colors.grey,
             ),
@@ -88,7 +89,7 @@ class CustomDropdownButton extends StatelessWidget {
                       item,
                       overflow: TextOverflow.ellipsis,
                       maxLines: 1,
-                      style: const TextStyle(
+                      style: GoogleFonts.robotoCondensed(
                         fontSize: 15,
                         color: Colors.grey,
                       ),

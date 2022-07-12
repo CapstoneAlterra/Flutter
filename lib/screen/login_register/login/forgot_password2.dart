@@ -16,7 +16,7 @@ class ForgotPassword2 extends StatelessWidget {
           elevation: 0,
           title: Text(
             'Forgot Password',
-            style: TextStyle(
+            style: GoogleFonts.robotoCondensed(
               color: Colors.black,
               fontSize: 20.0,
               fontWeight: FontWeight.w600,

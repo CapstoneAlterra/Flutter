@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../../../widget/button_widget.dart';
 import '../detail/detailactivity_screen.dart';
@@ -31,7 +32,7 @@ _showSimpleModalDialog(context) {
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                     softWrap: false,
-                    style: TextStyle(
+                    style: GoogleFonts.robotoCondensed(
                         color: Colors.black,
                         fontWeight: FontWeight.bold,
                         fontSize: 25.0),
@@ -39,7 +40,7 @@ _showSimpleModalDialog(context) {
                   SizedBox(height: 10),
                   Text(
                     'Etiam ut purus mattis mauris sodales aliquam. Aenean commodo ligula eget dolor. Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Vivamus euismod mauris. Nam adipiscing.',
-                    style: TextStyle(
+                    style: GoogleFonts.robotoCondensed(
                         color: Colors.black,
                         fontWeight: FontWeight.w400,
                         fontSize: 15.0),
@@ -71,9 +72,9 @@ class _NotificationScreenState extends State<NotificationScreen> {
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0,
-        title: const Text(
+        title: Text(
           'Notification',
-          style: TextStyle(
+          style: GoogleFonts.robotoCondensed(
             color: Colors.black,
             fontSize: 20.0,
             fontWeight: FontWeight.w600,
@@ -107,7 +108,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
                                   maxLines: 1,
                                   overflow: TextOverflow.ellipsis,
                                   softWrap: false,
-                                  style: TextStyle(
+                                  style: GoogleFonts.robotoCondensed(
                                       color: Colors.white,
                                       fontWeight: FontWeight.bold,
                                       fontSize: 17.0),
@@ -117,7 +118,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
                                   maxLines: 1,
                                   overflow: TextOverflow.ellipsis,
                                   softWrap: false,
-                                  style: TextStyle(
+                                  style: GoogleFonts.robotoCondensed(
                                       color: Colors.white,
                                       fontWeight: FontWeight.w300,
                                       fontSize: 14.0),
@@ -131,13 +132,13 @@ class _NotificationScreenState extends State<NotificationScreen> {
                         ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const [
+                          children: [
                             Text(
                               "Sed libero. In ut quam vitae odio lacinia tincidunt. In consectetuer turpis ut velit.",
                               maxLines: 1,
                               overflow: TextOverflow.ellipsis,
                               softWrap: false,
-                              style: TextStyle(
+                              style: GoogleFonts.robotoCondensed(
                                 color: Colors.white,
                                 fontWeight: FontWeight.w400,
                                 fontSize: 14.0,
@@ -171,7 +172,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
                                   maxLines: 1,
                                   overflow: TextOverflow.ellipsis,
                                   softWrap: false,
-                                  style: TextStyle(
+                                  style: GoogleFonts.robotoCondensed(
                                       color: Colors.white,
                                       fontWeight: FontWeight.bold,
                                       fontSize: 17.0),
@@ -181,7 +182,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
                                   maxLines: 1,
                                   overflow: TextOverflow.ellipsis,
                                   softWrap: false,
-                                  style: TextStyle(
+                                  style: GoogleFonts.robotoCondensed(
                                       color: Colors.white,
                                       fontWeight: FontWeight.w300,
                                       fontSize: 14.0),
@@ -195,13 +196,13 @@ class _NotificationScreenState extends State<NotificationScreen> {
                         ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const [
+                          children: [
                             Text(
                               "Sed libero. In ut quam vitae odio lacinia tincidunt. In consectetuer turpis ut velit.",
                               maxLines: 1,
                               overflow: TextOverflow.ellipsis,
                               softWrap: false,
-                              style: TextStyle(
+                              style: GoogleFonts.robotoCondensed(
                                 color: Colors.white,
                                 fontWeight: FontWeight.w400,
                                 fontSize: 14.0,
@@ -235,7 +236,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
                                   maxLines: 1,
                                   overflow: TextOverflow.ellipsis,
                                   softWrap: false,
-                                  style: TextStyle(
+                                  style: GoogleFonts.robotoCondensed(
                                       color: Colors.white,
                                       fontWeight: FontWeight.bold,
                                       fontSize: 17.0),
@@ -245,7 +246,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
                                   maxLines: 1,
                                   overflow: TextOverflow.ellipsis,
                                   softWrap: false,
-                                  style: TextStyle(
+                                  style: GoogleFonts.robotoCondensed(
                                       color: Colors.white,
                                       fontWeight: FontWeight.w300,
                                       fontSize: 14.0),
@@ -259,13 +260,13 @@ class _NotificationScreenState extends State<NotificationScreen> {
                         ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const [
+                          children: [
                             Text(
                               "Sed libero. In ut quam vitae odio lacinia tincidunt. In consectetuer turpis ut velit.",
                               maxLines: 1,
                               overflow: TextOverflow.ellipsis,
                               softWrap: false,
-                              style: TextStyle(
+                              style: GoogleFonts.robotoCondensed(
                                 color: Colors.white,
                                 fontWeight: FontWeight.w400,
                                 fontSize: 14.0,
@@ -299,7 +300,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
                                   maxLines: 1,
                                   overflow: TextOverflow.ellipsis,
                                   softWrap: false,
-                                  style: TextStyle(
+                                  style: GoogleFonts.robotoCondensed(
                                       color: Colors.white,
                                       fontWeight: FontWeight.bold,
                                       fontSize: 17.0),
@@ -309,7 +310,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
                                   maxLines: 1,
                                   overflow: TextOverflow.ellipsis,
                                   softWrap: false,
-                                  style: TextStyle(
+                                  style: GoogleFonts.robotoCondensed(
                                       color: Colors.white,
                                       fontWeight: FontWeight.w300,
                                       fontSize: 14.0),
@@ -323,13 +324,13 @@ class _NotificationScreenState extends State<NotificationScreen> {
                         ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const [
+                          children: [
                             Text(
                               "Sed libero. In ut quam vitae odio lacinia tincidunt. In consectetuer turpis ut velit.",
                               maxLines: 1,
                               overflow: TextOverflow.ellipsis,
                               softWrap: false,
-                              style: TextStyle(
+                              style: GoogleFonts.robotoCondensed(
                                 color: Colors.white,
                                 fontWeight: FontWeight.w400,
                                 fontSize: 14.0,

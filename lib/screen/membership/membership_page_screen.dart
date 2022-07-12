@@ -32,9 +32,9 @@ class _MembershipScreenState extends State<MembershipScreen> {
             Navigator.pop(context);
           },
         ),
-        title: const Text(
+        title: Text(
           'Membership',
-          style: TextStyle(
+          style: GoogleFonts.robotoCondensed(
             color: Colors.black,
             fontSize: 20.0,
             fontWeight: FontWeight.w600,
@@ -156,7 +156,7 @@ class _MembershipScreenState extends State<MembershipScreen> {
                             padding: EdgeInsets.symmetric(
                                 horizontal: 10.0, vertical: 10.0),
                             child: Text('4 Month \n \n Rp. 400.000',
-                                style: TextStyle(
+                                style: GoogleFonts.robotoCondensed(
                                   color: Colors.grey[400],
                                   fontWeight: FontWeight.w600,
                                 )),
@@ -165,7 +165,7 @@ class _MembershipScreenState extends State<MembershipScreen> {
                             padding: EdgeInsets.symmetric(
                                 horizontal: 10.0, vertical: 10.0),
                             child: Text('8 Month \n \n Rp. 800.000',
-                                style: TextStyle(
+                                style: GoogleFonts.robotoCondensed(
                                   color: Colors.grey[400],
                                   fontWeight: FontWeight.w600,
                                 )),

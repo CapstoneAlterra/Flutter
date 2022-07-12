@@ -29,7 +29,7 @@ class _Register2State extends State<Register2> {
           elevation: 0,
           title: Text(
             'Daftar',
-            style: TextStyle(
+            style: GoogleFonts.robotoCondensed(
               color: Colors.black,
               fontSize: 20.0,
               fontWeight: FontWeight.w600,
@@ -74,7 +74,8 @@ class _Register2State extends State<Register2> {
                                   ignoreBlank: false,
                                   autoValidateMode: AutovalidateMode.disabled,
                                   selectorTextStyle:
-                                      TextStyle(color: Colors.black),
+                                      GoogleFonts.robotoCondensed(
+                                          color: Colors.black),
                                   initialValue: number,
                                   textFieldController: controller,
                                   formatInput: false,

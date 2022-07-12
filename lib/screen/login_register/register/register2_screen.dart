@@ -21,7 +21,7 @@ class _RegisterState extends State<Register> {
           elevation: 0,
           title: Text(
             'Daftar',
-            style: TextStyle(
+            style: GoogleFonts.robotoCondensed(
               color: Colors.black,
               fontSize: 20.0,
               fontWeight: FontWeight.w600,

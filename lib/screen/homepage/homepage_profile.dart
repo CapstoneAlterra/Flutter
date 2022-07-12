@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gym_management_system/screen/homepage/profile/editprofile_screen.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../../widget/button3_widget.dart';
 import '../../widget/button_widget.dart';
@@ -30,10 +31,10 @@ class _HomepageProfileState extends State<HomepageProfile> {
                     height: 25,
                   ),
                   Row(
-                    children: const [
+                    children: [
                       Text(
                         'Profile',
-                        style: TextStyle(
+                        style: GoogleFonts.robotoCondensed(
                           color: Colors.black,
                           fontSize: 22.0,
                           fontWeight: FontWeight.w600,
@@ -56,9 +57,9 @@ class _HomepageProfileState extends State<HomepageProfile> {
                   const SizedBox(
                     height: 10.0,
                   ),
-                  const Text(
+                  Text(
                     'Hallo, {Username}',
-                    style: TextStyle(
+                    style: GoogleFonts.robotoCondensed(
                       color: Colors.black,
                       fontSize: 22.0,
                       fontWeight: FontWeight.w600,
@@ -92,12 +93,12 @@ class _HomepageProfileState extends State<HomepageProfile> {
                       ),
                     ),
                     child: Column(
-                      children: const [
+                      children: [
                         Align(
                           alignment: Alignment.centerLeft,
                           child: Text(
                             'Membership GymBud',
-                            style: TextStyle(
+                            style: GoogleFonts.robotoCondensed(
                                 color: Colors.white,
                                 fontSize: 18.0,
                                 fontWeight: FontWeight.bold),
@@ -107,7 +108,7 @@ class _HomepageProfileState extends State<HomepageProfile> {
                           alignment: Alignment.centerRight,
                           child: Text(
                             'Exp 27/07/22',
-                            style: TextStyle(
+                            style: GoogleFonts.robotoCondensed(
                               color: Colors.white,
                               fontSize: 14.0,
                             ),
@@ -117,7 +118,7 @@ class _HomepageProfileState extends State<HomepageProfile> {
                           alignment: Alignment.centerLeft,
                           child: Text(
                             'ID 97892321',
-                            style: TextStyle(
+                            style: GoogleFonts.robotoCondensed(
                               color: Colors.white,
                               fontSize: 16.0,
                             ),
@@ -128,10 +129,10 @@ class _HomepageProfileState extends State<HomepageProfile> {
                   ),
                   SizedBox(height: 20.0),
                   Row(
-                    children: const [
+                    children: [
                       Text(
                         'Account',
-                        style: TextStyle(
+                        style: GoogleFonts.robotoCondensed(
                           color: Colors.black,
                           fontSize: 20.0,
                           fontWeight: FontWeight.w600,

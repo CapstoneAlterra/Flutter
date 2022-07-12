@@ -44,9 +44,9 @@ class _HomepageHomeState extends State<HomepageHome> {
           margin: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 15.0),
           child:
               Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            const Text(
+            Text(
               'Halo, {nama}',
-              style: TextStyle(
+              style: GoogleFonts.robotoCondensed(
                 color: Colors.black,
                 fontSize: 22.0,
                 fontWeight: FontWeight.w600,
@@ -120,12 +120,12 @@ class _HomepageHomeState extends State<HomepageHome> {
                 ),
               ),
               child: Column(
-                children: const [
+                children: [
                   Align(
                     alignment: Alignment.centerLeft,
                     child: Text(
                       'Membership GymBud',
-                      style: TextStyle(
+                      style: GoogleFonts.robotoCondensed(
                           color: Colors.white,
                           fontSize: 18.0,
                           fontWeight: FontWeight.bold),
@@ -135,7 +135,7 @@ class _HomepageHomeState extends State<HomepageHome> {
                     alignment: Alignment.centerRight,
                     child: Text(
                       'Exp 27/07/22',
-                      style: TextStyle(
+                      style: GoogleFonts.robotoCondensed(
                         color: Colors.white,
                         fontSize: 14.0,
                       ),
@@ -145,7 +145,7 @@ class _HomepageHomeState extends State<HomepageHome> {
                     alignment: Alignment.centerLeft,
                     child: Text(
                       'ID 97892321',
-                      style: TextStyle(
+                      style: GoogleFonts.robotoCondensed(
                         color: Colors.white,
                         fontSize: 16.0,
                       ),
@@ -159,10 +159,10 @@ class _HomepageHomeState extends State<HomepageHome> {
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: const [
+              children: [
                 Text(
                   'Kelas yang tersedia',
-                  style: TextStyle(
+                  style: GoogleFonts.robotoCondensed(
                     color: Colors.black,
                     fontSize: 18.0,
                     fontWeight: FontWeight.w500,
@@ -170,7 +170,7 @@ class _HomepageHomeState extends State<HomepageHome> {
                 ),
                 Text(
                   'See All',
-                  style: TextStyle(
+                  style: GoogleFonts.robotoCondensed(
                     color: Colors.black,
                     fontSize: 15.0,
                     fontWeight: FontWeight.w300,
@@ -212,7 +212,7 @@ class _HomepageHomeState extends State<HomepageHome> {
                                             horizontal: 3.0, vertical: 3.0),
                                         child: Text(
                                           'Offline',
-                                          style: TextStyle(
+                                          style: GoogleFonts.robotoCondensed(
                                             color: Colors.white,
                                             fontSize: 15.0,
                                             fontWeight: FontWeight.w400,
@@ -235,10 +235,10 @@ class _HomepageHomeState extends State<HomepageHome> {
                               child: Row(
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
-                                children: const [
+                                children: [
                                   Text(
                                     'Cardio',
-                                    style: TextStyle(
+                                    style: GoogleFonts.robotoCondensed(
                                       color: Colors.black,
                                       fontSize: 15.0,
                                       fontWeight: FontWeight.w300,
@@ -246,7 +246,7 @@ class _HomepageHomeState extends State<HomepageHome> {
                                   ),
                                   Text(
                                     '22/07/22',
-                                    style: TextStyle(
+                                    style: GoogleFonts.robotoCondensed(
                                       color: Colors.black,
                                       fontSize: 15.0,
                                       fontWeight: FontWeight.w300,
@@ -258,9 +258,9 @@ class _HomepageHomeState extends State<HomepageHome> {
                             Container(
                               margin:
                                   const EdgeInsets.symmetric(horizontal: 7.0),
-                              child: const Text(
+                              child: Text(
                                 'BodyCombat',
-                                style: TextStyle(
+                                style: GoogleFonts.robotoCondensed(
                                   color: Colors.black,
                                   fontSize: 15.0,
                                   fontWeight: FontWeight.w600,
@@ -275,7 +275,7 @@ class _HomepageHomeState extends State<HomepageHome> {
                                   const EdgeInsets.symmetric(horizontal: 7.0),
                               child: Row(
                                 crossAxisAlignment: CrossAxisAlignment.start,
-                                children: const [
+                                children: [
                                   Icon(
                                     Icons.access_time,
                                     color: Colors.black,
@@ -286,7 +286,7 @@ class _HomepageHomeState extends State<HomepageHome> {
                                   ),
                                   Text(
                                     '00:00',
-                                    style: TextStyle(
+                                    style: GoogleFonts.robotoCondensed(
                                       color: Colors.grey,
                                       fontSize: 17.0,
                                       fontWeight: FontWeight.w400,
@@ -301,9 +301,9 @@ class _HomepageHomeState extends State<HomepageHome> {
                             Container(
                               margin:
                                   const EdgeInsets.symmetric(horizontal: 7.0),
-                              child: const Text(
+                              child: Text(
                                 'Rp. 999.999.999',
-                                style: TextStyle(
+                                style: GoogleFonts.robotoCondensed(
                                   color: Colors.red,
                                   fontSize: 17.0,
                                   fontWeight: FontWeight.w500,
@@ -345,7 +345,7 @@ class _HomepageHomeState extends State<HomepageHome> {
                                           horizontal: 3.0, vertical: 3.0),
                                       child: Text(
                                         'Online',
-                                        style: TextStyle(
+                                        style: GoogleFonts.robotoCondensed(
                                           color: Colors.white,
                                           fontSize: 15.0,
                                           fontWeight: FontWeight.w400,
@@ -366,10 +366,10 @@ class _HomepageHomeState extends State<HomepageHome> {
                                 horizontal: 7.0, vertical: 5.0),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: const [
+                              children: [
                                 Text(
                                   'Cardio',
-                                  style: TextStyle(
+                                  style: GoogleFonts.robotoCondensed(
                                     color: Colors.black,
                                     fontSize: 15.0,
                                     fontWeight: FontWeight.w300,
@@ -377,7 +377,7 @@ class _HomepageHomeState extends State<HomepageHome> {
                                 ),
                                 Text(
                                   '22/07/22',
-                                  style: TextStyle(
+                                  style: GoogleFonts.robotoCondensed(
                                     color: Colors.black,
                                     fontSize: 15.0,
                                     fontWeight: FontWeight.w300,
@@ -388,9 +388,9 @@ class _HomepageHomeState extends State<HomepageHome> {
                           ),
                           Container(
                             margin: const EdgeInsets.symmetric(horizontal: 7.0),
-                            child: const Text(
+                            child: Text(
                               'BodyCombat',
-                              style: TextStyle(
+                              style: GoogleFonts.robotoCondensed(
                                 color: Colors.black,
                                 fontSize: 15.0,
                                 fontWeight: FontWeight.w600,
@@ -404,7 +404,7 @@ class _HomepageHomeState extends State<HomepageHome> {
                             margin: const EdgeInsets.symmetric(horizontal: 7.0),
                             child: Row(
                               crossAxisAlignment: CrossAxisAlignment.start,
-                              children: const [
+                              children: [
                                 Icon(
                                   Icons.access_time,
                                   color: Colors.black,
@@ -415,7 +415,7 @@ class _HomepageHomeState extends State<HomepageHome> {
                                 ),
                                 Text(
                                   '00:00',
-                                  style: TextStyle(
+                                  style: GoogleFonts.robotoCondensed(
                                     color: Colors.grey,
                                     fontSize: 17.0,
                                     fontWeight: FontWeight.w400,
@@ -429,9 +429,9 @@ class _HomepageHomeState extends State<HomepageHome> {
                           ),
                           Container(
                             margin: const EdgeInsets.symmetric(horizontal: 7.0),
-                            child: const Text(
+                            child: Text(
                               'Rp. 999.999.999',
-                              style: TextStyle(
+                              style: GoogleFonts.robotoCondensed(
                                 color: Colors.red,
                                 fontSize: 17.0,
                                 fontWeight: FontWeight.w500,
@@ -475,7 +475,7 @@ class _HomepageHomeState extends State<HomepageHome> {
                                           horizontal: 3.0, vertical: 3.0),
                                       child: Text(
                                         'Online',
-                                        style: TextStyle(
+                                        style: GoogleFonts.robotoCondensed(
                                           color: Colors.white,
                                           fontSize: 15.0,
                                           fontWeight: FontWeight.w400,
@@ -496,10 +496,10 @@ class _HomepageHomeState extends State<HomepageHome> {
                                 horizontal: 7.0, vertical: 5.0),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: const [
+                              children: [
                                 Text(
                                   'Cardio',
-                                  style: TextStyle(
+                                  style: GoogleFonts.robotoCondensed(
                                     color: Colors.black,
                                     fontSize: 15.0,
                                     fontWeight: FontWeight.w300,
@@ -507,7 +507,7 @@ class _HomepageHomeState extends State<HomepageHome> {
                                 ),
                                 Text(
                                   '22/07/22',
-                                  style: TextStyle(
+                                  style: GoogleFonts.robotoCondensed(
                                     color: Colors.black,
                                     fontSize: 15.0,
                                     fontWeight: FontWeight.w300,
@@ -518,9 +518,9 @@ class _HomepageHomeState extends State<HomepageHome> {
                           ),
                           Container(
                             margin: const EdgeInsets.symmetric(horizontal: 7.0),
-                            child: const Text(
+                            child: Text(
                               'BodyCombat',
-                              style: TextStyle(
+                              style: GoogleFonts.robotoCondensed(
                                 color: Colors.black,
                                 fontSize: 15.0,
                                 fontWeight: FontWeight.w600,
@@ -534,7 +534,7 @@ class _HomepageHomeState extends State<HomepageHome> {
                             margin: const EdgeInsets.symmetric(horizontal: 7.0),
                             child: Row(
                               crossAxisAlignment: CrossAxisAlignment.start,
-                              children: const [
+                              children: [
                                 Icon(
                                   Icons.access_time,
                                   color: Colors.black,
@@ -545,7 +545,7 @@ class _HomepageHomeState extends State<HomepageHome> {
                                 ),
                                 Text(
                                   '00:00',
-                                  style: TextStyle(
+                                  style: GoogleFonts.robotoCondensed(
                                     color: Colors.grey,
                                     fontSize: 17.0,
                                     fontWeight: FontWeight.w400,
@@ -559,9 +559,9 @@ class _HomepageHomeState extends State<HomepageHome> {
                           ),
                           Container(
                             margin: const EdgeInsets.symmetric(horizontal: 7.0),
-                            child: const Text(
+                            child: Text(
                               'Rp. 999.999.999',
-                              style: TextStyle(
+                              style: GoogleFonts.robotoCondensed(
                                 color: Colors.red,
                                 fontSize: 17.0,
                                 fontWeight: FontWeight.w500,
@@ -584,10 +584,10 @@ class _HomepageHomeState extends State<HomepageHome> {
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: const [
+              children: [
                 Text(
                   'Newsletter',
-                  style: TextStyle(
+                  style: GoogleFonts.robotoCondensed(
                     color: Colors.black,
                     fontSize: 18.0,
                     fontWeight: FontWeight.w500,
@@ -595,7 +595,7 @@ class _HomepageHomeState extends State<HomepageHome> {
                 ),
                 Text(
                   'See All',
-                  style: TextStyle(
+                  style: GoogleFonts.robotoCondensed(
                     color: Colors.black,
                     fontSize: 15.0,
                     fontWeight: FontWeight.w300,
@@ -622,13 +622,13 @@ class _HomepageHomeState extends State<HomepageHome> {
                             margin: const EdgeInsets.symmetric(horizontal: 7.0),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
-                              children: const [
+                              children: [
                                 SizedBox(
                                   height: 10.0,
                                 ),
                                 Text(
                                   '4 June 2022',
-                                  style: TextStyle(
+                                  style: GoogleFonts.robotoCondensed(
                                     color: Colors.black54,
                                     fontSize: 16.0,
                                     fontWeight: FontWeight.w400,
@@ -639,7 +639,7 @@ class _HomepageHomeState extends State<HomepageHome> {
                                 ),
                                 Text(
                                   'Tips jaga makan saat melakukan diet',
-                                  style: TextStyle(
+                                  style: GoogleFonts.robotoCondensed(
                                     color: Colors.black,
                                     fontSize: 17.0,
                                     fontWeight: FontWeight.w600,
@@ -672,13 +672,13 @@ class _HomepageHomeState extends State<HomepageHome> {
                             margin: const EdgeInsets.symmetric(horizontal: 7.0),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
-                              children: const [
+                              children: [
                                 SizedBox(
                                   height: 10.0,
                                 ),
                                 Text(
                                   '4 June 2022',
-                                  style: TextStyle(
+                                  style: GoogleFonts.robotoCondensed(
                                     color: Colors.black54,
                                     fontSize: 16.0,
                                     fontWeight: FontWeight.w400,
@@ -689,7 +689,7 @@ class _HomepageHomeState extends State<HomepageHome> {
                                 ),
                                 Text(
                                   'Tips jaga makan saat melakukan diet',
-                                  style: TextStyle(
+                                  style: GoogleFonts.robotoCondensed(
                                     color: Colors.black,
                                     fontSize: 17.0,
                                     fontWeight: FontWeight.w600,
@@ -722,13 +722,13 @@ class _HomepageHomeState extends State<HomepageHome> {
                             margin: const EdgeInsets.symmetric(horizontal: 7.0),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
-                              children: const [
+                              children: [
                                 SizedBox(
                                   height: 10.0,
                                 ),
                                 Text(
                                   '4 June 2022',
-                                  style: TextStyle(
+                                  style: GoogleFonts.robotoCondensed(
                                     color: Colors.black54,
                                     fontSize: 16.0,
                                     fontWeight: FontWeight.w400,
@@ -739,7 +739,7 @@ class _HomepageHomeState extends State<HomepageHome> {
                                 ),
                                 Text(
                                   'Tips jaga makan saat melakukan diet',
-                                  style: TextStyle(
+                                  style: GoogleFonts.robotoCondensed(
                                     color: Colors.black,
                                     fontSize: 17.0,
                                     fontWeight: FontWeight.w600,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class MembersipFormWidget extends StatelessWidget {
   final String hintText;
@@ -32,7 +33,7 @@ class MembersipFormWidget extends StatelessWidget {
                 vertical: 15.0,
               ),
               hintText: '$hintText',
-              hintStyle: TextStyle(
+              hintStyle: GoogleFonts.robotoCondensed(
                 color: Colors.grey[400],
                 fontSize: 15.0,
               ),

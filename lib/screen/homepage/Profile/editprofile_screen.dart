@@ -23,9 +23,9 @@ class _EditProfileState extends State<EditProfile> {
         appBar: AppBar(
           backgroundColor: Colors.white,
           elevation: 0,
-          title: const Text(
+          title: Text(
             'Edit Profile',
-            style: TextStyle(
+            style: GoogleFonts.robotoCondensed(
               color: Colors.black,
               fontSize: 20.0,
               fontWeight: FontWeight.w600,
@@ -74,6 +74,7 @@ class _EditProfileState extends State<EditProfile> {
                               ),
                             ),
                             Expanded(
+                                flex: 3,
                                 child: FormProfile(hintText: 'example@9999')),
                           ],
                         ),
@@ -87,7 +88,9 @@ class _EditProfileState extends State<EditProfile> {
                                     fontWeight: FontWeight.w600),
                               ),
                             ),
-                            Expanded(child: FormProfile(hintText: '******')),
+                            Expanded(
+                                flex: 3,
+                                child: FormProfile(hintText: '******')),
                           ],
                         ),
                         Row(
@@ -120,7 +123,8 @@ class _EditProfileState extends State<EditProfile> {
                                     fontWeight: FontWeight.w600),
                               ),
                             ),
-                            Expanded(child: FormProfile(hintText: 'Doni')),
+                            Expanded(
+                                flex: 3, child: FormProfile(hintText: 'Doni')),
                           ],
                         ),
                         Row(
@@ -133,6 +137,7 @@ class _EditProfileState extends State<EditProfile> {
                               ),
                             ),
                             Expanded(
+                                flex: 3,
                                 child: FormProfile(hintText: '08654321234')),
                           ],
                         ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../../widget/customdropdownbutton2.dart';
 import '../membership/membership_page_screen.dart';
@@ -43,10 +44,10 @@ class _HomepageActivityState extends State<HomepageActivity> {
           child: Column(
             children: [
               Row(
-                children: const [
+                children: [
                   Text(
                     'My Activity',
-                    style: TextStyle(
+                    style: GoogleFonts.robotoCondensed(
                       color: Colors.black,
                       fontSize: 22.0,
                       fontWeight: FontWeight.w600,
@@ -86,7 +87,7 @@ class _HomepageActivityState extends State<HomepageActivity> {
                                         horizontal: 3.0, vertical: 3.0),
                                     child: Text(
                                       'Offline',
-                                      style: TextStyle(
+                                      style: GoogleFonts.robotoCondensed(
                                         color: Colors.white,
                                         fontSize: 15.0,
                                         fontWeight: FontWeight.w400,
@@ -105,10 +106,10 @@ class _HomepageActivityState extends State<HomepageActivity> {
                                 child: Row(
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
-                                  children: const [
+                                  children: [
                                     Text(
                                       'Cardio',
-                                      style: TextStyle(
+                                      style: GoogleFonts.robotoCondensed(
                                         color: Colors.black,
                                         fontSize: 15.0,
                                         fontWeight: FontWeight.w300,
@@ -116,7 +117,7 @@ class _HomepageActivityState extends State<HomepageActivity> {
                                     ),
                                     Text(
                                       '22/07/22',
-                                      style: TextStyle(
+                                      style: GoogleFonts.robotoCondensed(
                                         color: Colors.black,
                                         fontSize: 15.0,
                                         fontWeight: FontWeight.w300,
@@ -128,9 +129,9 @@ class _HomepageActivityState extends State<HomepageActivity> {
                               Container(
                                 margin:
                                     const EdgeInsets.symmetric(horizontal: 7.0),
-                                child: const Text(
+                                child: Text(
                                   'BodyCombat',
-                                  style: TextStyle(
+                                  style: GoogleFonts.robotoCondensed(
                                     color: Colors.black,
                                     fontSize: 15.0,
                                     fontWeight: FontWeight.w600,
@@ -145,7 +146,7 @@ class _HomepageActivityState extends State<HomepageActivity> {
                                     const EdgeInsets.symmetric(horizontal: 7.0),
                                 child: Row(
                                   crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: const [
+                                  children: [
                                     Icon(
                                       Icons.access_time,
                                       color: Colors.black,
@@ -156,7 +157,7 @@ class _HomepageActivityState extends State<HomepageActivity> {
                                     ),
                                     Text(
                                       '00:00',
-                                      style: TextStyle(
+                                      style: GoogleFonts.robotoCondensed(
                                         color: Colors.grey,
                                         fontSize: 17.0,
                                         fontWeight: FontWeight.w400,
@@ -197,7 +198,7 @@ class _HomepageActivityState extends State<HomepageActivity> {
                                     horizontal: 3.0, vertical: 3.0),
                                 child: Text(
                                   'Online',
-                                  style: TextStyle(
+                                  style: GoogleFonts.robotoCondensed(
                                     color: Colors.white,
                                     fontSize: 15.0,
                                     fontWeight: FontWeight.w400,
@@ -215,10 +216,10 @@ class _HomepageActivityState extends State<HomepageActivity> {
                                 horizontal: 7.0, vertical: 5.0),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: const [
+                              children: [
                                 Text(
                                   'Cardio',
-                                  style: TextStyle(
+                                  style: GoogleFonts.robotoCondensed(
                                     color: Colors.black,
                                     fontSize: 15.0,
                                     fontWeight: FontWeight.w300,
@@ -226,7 +227,7 @@ class _HomepageActivityState extends State<HomepageActivity> {
                                 ),
                                 Text(
                                   '22/07/22',
-                                  style: TextStyle(
+                                  style: GoogleFonts.robotoCondensed(
                                     color: Colors.black,
                                     fontSize: 15.0,
                                     fontWeight: FontWeight.w300,
@@ -237,9 +238,9 @@ class _HomepageActivityState extends State<HomepageActivity> {
                           ),
                           Container(
                             margin: const EdgeInsets.symmetric(horizontal: 7.0),
-                            child: const Text(
+                            child: Text(
                               'BodyCombat',
-                              style: TextStyle(
+                              style: GoogleFonts.robotoCondensed(
                                 color: Colors.black,
                                 fontSize: 15.0,
                                 fontWeight: FontWeight.w600,
@@ -253,7 +254,7 @@ class _HomepageActivityState extends State<HomepageActivity> {
                             margin: const EdgeInsets.symmetric(horizontal: 7.0),
                             child: Row(
                               crossAxisAlignment: CrossAxisAlignment.start,
-                              children: const [
+                              children: [
                                 Icon(
                                   Icons.access_time,
                                   color: Colors.black,
@@ -264,7 +265,7 @@ class _HomepageActivityState extends State<HomepageActivity> {
                                 ),
                                 Text(
                                   '00:00',
-                                  style: TextStyle(
+                                  style: GoogleFonts.robotoCondensed(
                                     color: Colors.grey,
                                     fontSize: 17.0,
                                     fontWeight: FontWeight.w400,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class PasswordWidget extends StatefulWidget {
   @override
@@ -30,7 +31,7 @@ class _PasswordWidgetState extends State<PasswordWidget> {
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(5.0),
               ),
-              labelStyle: TextStyle(
+              labelStyle: GoogleFonts.robotoCondensed(
                 color: Colors.grey[600],
                 fontSize: 15.0,
               ),
