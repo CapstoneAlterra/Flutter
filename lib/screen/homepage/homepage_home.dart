@@ -203,26 +203,35 @@ class _HomepageHomeState extends State<HomepageHome> {
                                   Stack(
                                     children: [
                                       Image.asset(
-                                          'assets/images/banner_kelas.jpg',
-                                          fit: BoxFit.fill),
-                                      Container(
-                                        padding: EdgeInsets.symmetric(
-                                            horizontal: 5.0, vertical: 5.0),
-                                        margin: EdgeInsets.symmetric(
-                                            horizontal: 3.0, vertical: 3.0),
-                                        child: Text(
-                                          'Offline',
-                                          style: GoogleFonts.robotoCondensed(
-                                            color: Colors.white,
-                                            fontSize: 15.0,
-                                            fontWeight: FontWeight.w400,
+                                        'assets/images/banner_kelas.jpg',
+                                        fit: BoxFit.fill,
+                                      ),
+                                      Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.end,
+                                        children: [
+                                          Container(
+                                            padding: EdgeInsets.symmetric(
+                                                horizontal: 5.0, vertical: 5.0),
+                                            margin: EdgeInsets.symmetric(
+                                                horizontal: 3.0, vertical: 3.0),
+                                            child: Text(
+                                              'Offline',
+                                              style:
+                                                  GoogleFonts.robotoCondensed(
+                                                color: Colors.white,
+                                                fontSize: 15.0,
+                                                fontWeight: FontWeight.w400,
+                                              ),
+                                            ),
+                                            decoration: BoxDecoration(
+                                              borderRadius:
+                                                  BorderRadius.circular(5),
+                                              color: Color.fromARGB(
+                                                  255, 234, 5, 5),
+                                            ),
                                           ),
-                                        ),
-                                        decoration: BoxDecoration(
-                                          borderRadius:
-                                              BorderRadius.circular(10),
-                                          color: Color.fromARGB(255, 234, 5, 5),
-                                        ),
+                                        ],
                                       ),
                                     ],
                                   ),
@@ -236,12 +245,28 @@ class _HomepageHomeState extends State<HomepageHome> {
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Text(
-                                    'Cardio',
-                                    style: GoogleFonts.robotoCondensed(
-                                      color: Colors.black,
-                                      fontSize: 15.0,
-                                      fontWeight: FontWeight.w300,
+                                  // Text(
+                                  //   'Cardio',
+                                  //   style: GoogleFonts.robotoCondensed(
+                                  //     color: Colors.black,
+                                  //     fontSize: 15.0,
+                                  //     fontWeight: FontWeight.w300,
+                                  //   ),
+                                  // ),
+                                  Container(
+                                    padding:
+                                        EdgeInsets.symmetric(horizontal: 5.0),
+                                    child: Text(
+                                      'Cardio',
+                                      style: GoogleFonts.robotoCondensed(
+                                        color: Colors.white,
+                                        fontSize: 15.0,
+                                        fontWeight: FontWeight.w400,
+                                      ),
+                                    ),
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(10),
+                                      color: Color.fromARGB(255, 244, 80, 64),
                                     ),
                                   ),
                                   Text(
@@ -338,23 +363,30 @@ class _HomepageHomeState extends State<HomepageHome> {
                                     Image.asset(
                                         'assets/images/banner_kelas.jpg',
                                         fit: BoxFit.fill),
-                                    Container(
-                                      padding: EdgeInsets.symmetric(
-                                          horizontal: 5.0, vertical: 5.0),
-                                      margin: EdgeInsets.symmetric(
-                                          horizontal: 3.0, vertical: 3.0),
-                                      child: Text(
-                                        'Online',
-                                        style: GoogleFonts.robotoCondensed(
-                                          color: Colors.white,
-                                          fontSize: 15.0,
-                                          fontWeight: FontWeight.w400,
+                                    Row(
+                                      mainAxisAlignment: MainAxisAlignment.end,
+                                      children: [
+                                        Container(
+                                          padding: EdgeInsets.symmetric(
+                                              horizontal: 5.0, vertical: 5.0),
+                                          margin: EdgeInsets.symmetric(
+                                              horizontal: 3.0, vertical: 3.0),
+                                          child: Text(
+                                            'Online',
+                                            style: GoogleFonts.robotoCondensed(
+                                              color: Colors.white,
+                                              fontSize: 15.0,
+                                              fontWeight: FontWeight.w400,
+                                            ),
+                                          ),
+                                          decoration: BoxDecoration(
+                                            borderRadius:
+                                                BorderRadius.circular(5),
+                                            color: Color.fromARGB(
+                                                255, 0, 202, 229),
+                                          ),
                                         ),
-                                      ),
-                                      decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(10),
-                                        color: Color.fromARGB(255, 0, 202, 229),
-                                      ),
+                                      ],
                                     ),
                                   ],
                                 ),
@@ -367,12 +399,20 @@ class _HomepageHomeState extends State<HomepageHome> {
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text(
-                                  'Cardio',
-                                  style: GoogleFonts.robotoCondensed(
-                                    color: Colors.black,
-                                    fontSize: 15.0,
-                                    fontWeight: FontWeight.w300,
+                                Container(
+                                  padding:
+                                      EdgeInsets.symmetric(horizontal: 5.0),
+                                  child: Text(
+                                    'Cardio',
+                                    style: GoogleFonts.robotoCondensed(
+                                      color: Colors.white,
+                                      fontSize: 15.0,
+                                      fontWeight: FontWeight.w400,
+                                    ),
+                                  ),
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(10),
+                                    color: Color.fromARGB(255, 244, 80, 64),
                                   ),
                                 ),
                                 Text(
@@ -468,23 +508,30 @@ class _HomepageHomeState extends State<HomepageHome> {
                                     Image.asset(
                                         'assets/images/banner_kelas.jpg',
                                         fit: BoxFit.fill),
-                                    Container(
-                                      padding: EdgeInsets.symmetric(
-                                          horizontal: 5.0, vertical: 5.0),
-                                      margin: EdgeInsets.symmetric(
-                                          horizontal: 3.0, vertical: 3.0),
-                                      child: Text(
-                                        'Online',
-                                        style: GoogleFonts.robotoCondensed(
-                                          color: Colors.white,
-                                          fontSize: 15.0,
-                                          fontWeight: FontWeight.w400,
+                                    Row(
+                                      mainAxisAlignment: MainAxisAlignment.end,
+                                      children: [
+                                        Container(
+                                          padding: EdgeInsets.symmetric(
+                                              horizontal: 5.0, vertical: 5.0),
+                                          margin: EdgeInsets.symmetric(
+                                              horizontal: 3.0, vertical: 3.0),
+                                          child: Text(
+                                            'Online',
+                                            style: GoogleFonts.robotoCondensed(
+                                              color: Colors.white,
+                                              fontSize: 15.0,
+                                              fontWeight: FontWeight.w400,
+                                            ),
+                                          ),
+                                          decoration: BoxDecoration(
+                                            borderRadius:
+                                                BorderRadius.circular(5),
+                                            color: Color.fromARGB(
+                                                255, 0, 202, 229),
+                                          ),
                                         ),
-                                      ),
-                                      decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(10),
-                                        color: Color.fromARGB(255, 0, 202, 229),
-                                      ),
+                                      ],
                                     ),
                                   ],
                                 ),
@@ -497,12 +544,20 @@ class _HomepageHomeState extends State<HomepageHome> {
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text(
-                                  'Cardio',
-                                  style: GoogleFonts.robotoCondensed(
-                                    color: Colors.black,
-                                    fontSize: 15.0,
-                                    fontWeight: FontWeight.w300,
+                                Container(
+                                  padding:
+                                      EdgeInsets.symmetric(horizontal: 5.0),
+                                  child: Text(
+                                    'Cardio',
+                                    style: GoogleFonts.robotoCondensed(
+                                      color: Colors.white,
+                                      fontSize: 15.0,
+                                      fontWeight: FontWeight.w400,
+                                    ),
+                                  ),
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(10),
+                                    color: Color.fromARGB(255, 244, 80, 64),
                                   ),
                                 ),
                                 Text(
