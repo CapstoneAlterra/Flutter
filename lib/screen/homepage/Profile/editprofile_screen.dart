@@ -53,13 +53,20 @@ class _EditProfileState extends State<EditProfile> {
                             ),
                           ),
                         ),
-                        const SizedBox(
-                          height: 10.0,
-                        ),
-                        Text(
-                          'Change',
-                          style: GoogleFonts.robotoCondensed(
-                              color: Color.fromARGB(255, 233, 5, 5)),
+                        // Text(
+                        //   'Change',
+                        //   style: GoogleFonts.robotoCondensed(
+                        //       color: Color.fromARGB(255, 233, 5, 5)),
+                        // ),
+                        TextButton(
+                          onPressed: () {},
+                          child: Text(
+                            'Change',
+                            style: GoogleFonts.robotoCondensed(
+                              color: Color.fromARGB(255, 233, 5, 5),
+                              fontSize: 17,
+                            ),
+                          ),
                         ),
                         SizedBox(
                           height: 25,

@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:login_register/screen/login_register.dart';
-import 'package:login_register/splash_screen.dart';
+import 'package:flutter_gym_management_system/screen/login_register/login_register.dart';
+// import 'package:login_register/screen/login_register.dart';
+// import 'package:login_register/splash_screen.dart';
+import 'package:flutter_gym_management_system/screen/splash_screen.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'screen/homepage/homepage_screen.dart';
-import 'screen/login/login_screen..dart';
-import 'screen/register/register_screen.dart';
+import 'screen/login_register/login/login_screen..dart';
+import 'screen/login_register/register/register_screen.dart';
 import 'viewmodel/login_viewmodel.dart';
 import 'viewmodel/register_viewmodel.dart';
 

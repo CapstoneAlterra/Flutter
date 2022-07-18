@@ -1,8 +1,9 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:login_register/service/membership_page.dart';
+// import 'package:login_register/service/membership_page.dart';
 
 import '../model/membership_model.dart';
+import '../service/membership_page.dart';
 
 class MembershipViewModel with ChangeNotifier {
   String message = '';

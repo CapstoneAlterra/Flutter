@@ -2,17 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 // import 'package:flutter_gym_management_system/screen/login_register/register/register2_screen.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:login_register/screen/login/login_screen..dart';
-import 'package:login_register/screen/register/register3_screen.dart';
+// import 'package:login_register/screen/login/login_screen..dart';
+import 'package:flutter_gym_management_system/screen/login_register/login/login_screen..dart';
+// import 'package:login_register/screen/register/register3_screen.dart';
+import 'package:flutter_gym_management_system/screen/login_register/register/register3_screen.dart';
 import 'package:provider/provider.dart';
 
 import '../../../widget/button_widget.dart';
 import '../../../widget/form_widget.dart';
 import '../../../widget/password_widget.dart';
-import '../../components.dart';
-import '../../constant.dart';
-import '../../model/register_model.dart';
-import '../../viewmodel/register_viewmodel.dart';
+import '../../../components.dart';
+import '../../../constant.dart';
+import '../../../model/register_model.dart';
+import '../../../viewmodel/register_viewmodel.dart';
 import 'register2_screen.dart';
 
 class RegisterScreen extends StatefulWidget {

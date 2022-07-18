@@ -5,7 +5,8 @@ import 'package:flutter_gym_management_system/screen/membership/membership_page_
 import 'package:flutter_gym_management_system/widget/button_widget.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'detail/detailKelas_screen.dart';
+// import 'detail/DetailNewsLetter_screen.dart';
+import 'detail/detail_newsletter.dart';
 
 class HomepageHome extends StatefulWidget {
   const HomepageHome({Key? key}) : super(key: key);
@@ -192,7 +193,7 @@ class _HomepageHomeState extends State<HomepageHome> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => DetailKelas()));
+                                builder: (context) => DetailNewsLetter()));
                       },
                       child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -361,8 +362,9 @@ class _HomepageHomeState extends State<HomepageHome> {
                                 Stack(
                                   children: [
                                     Image.asset(
-                                        'assets/images/banner_kelas.jpg',
-                                        fit: BoxFit.fill),
+                                      'assets/images/banner_kelas.jpg',
+                                      fit: BoxFit.fill,
+                                    ),
                                     Row(
                                       mainAxisAlignment: MainAxisAlignment.end,
                                       children: [
@@ -648,13 +650,18 @@ class _HomepageHomeState extends State<HomepageHome> {
                     fontWeight: FontWeight.w500,
                   ),
                 ),
-                Text(
-                  'See All',
-                  style: GoogleFonts.robotoCondensed(
-                    color: Colors.black,
-                    fontSize: 15.0,
-                    fontWeight: FontWeight.w300,
+                InkWell(
+                  child: Text(
+                    'See All',
+                    style: GoogleFonts.robotoCondensed(
+                      color: Colors.black,
+                      fontSize: 15.0,
+                      fontWeight: FontWeight.w300,
+                    ),
                   ),
+                  onTap: () {
+                    HomepageHome();
+                  },
                 ),
               ],
             ),
@@ -668,7 +675,14 @@ class _HomepageHomeState extends State<HomepageHome> {
                 children: <Widget>[
                   Container(
                     width: 200,
-                    child: Column(
+                    child: InkWell(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (contex) => DetailNewsLetter()));
+                      },
+                      child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Image.asset('assets/images/banner_newsletter.jpeg',
@@ -703,7 +717,9 @@ class _HomepageHomeState extends State<HomepageHome> {
                               ],
                             ),
                           )
-                        ]),
+                        ],
+                      ),
+                    ),
                     decoration: BoxDecoration(
                       color: Colors.white,
                       border: Border.all(
@@ -718,7 +734,14 @@ class _HomepageHomeState extends State<HomepageHome> {
                   ),
                   Container(
                     width: 200,
-                    child: Column(
+                    child: InkWell(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (contex) => DetailNewsLetter()));
+                      },
+                      child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Image.asset('assets/images/banner_newsletter.jpeg',
@@ -753,7 +776,9 @@ class _HomepageHomeState extends State<HomepageHome> {
                               ],
                             ),
                           )
-                        ]),
+                        ],
+                      ),
+                    ),
                     decoration: BoxDecoration(
                       color: Colors.white,
                       border: Border.all(
@@ -768,7 +793,14 @@ class _HomepageHomeState extends State<HomepageHome> {
                   ),
                   Container(
                     width: 200,
-                    child: Column(
+                    child: InkWell(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (contex) => DetailNewsLetter()));
+                      },
+                      child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Image.asset('assets/images/banner_newsletter.jpeg',
@@ -803,7 +835,9 @@ class _HomepageHomeState extends State<HomepageHome> {
                               ],
                             ),
                           )
-                        ]),
+                        ],
+                      ),
+                    ),
                     decoration: BoxDecoration(
                       color: Colors.white,
                       border: Border.all(

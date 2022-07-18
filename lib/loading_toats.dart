@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
-import 'package:login_register/constant.dart';
+// import 'package:login_register/constant.dart';
 
 class LoadingToast extends StatelessWidget {
   const LoadingToast({Key? key, required this.message}) : super(key: key);

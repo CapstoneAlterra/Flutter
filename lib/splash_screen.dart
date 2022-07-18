@@ -1,8 +1,9 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_gym_management_system/screen/login_register/login_register.dart';
 
-import 'screen/login_register.dart';
+// import 'screen/login_register.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
