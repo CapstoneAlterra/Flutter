@@ -1,20 +1,25 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_gym_management_system/screen/homepage/Profile/change_password_screen.dart';
-import 'package:flutter_gym_management_system/screen/homepage/homepage_profil.dart';
-import 'package:flutter_gym_management_system/widget/form_widget.dart';
-import 'package:flutter_gym_management_system/widget/formprofile_widget.dart';
-import 'package:google_fonts/google_fonts.dart';
-
-import '../../../widget/button_widget.dart';
-
 class EditProfile extends StatefulWidget {
-  const EditProfile({Key? key}) : super(key: key);
+  const EditProfile({Key? key, this.image}) : super(key: key);
+  final File? image;
 
   @override
   State<EditProfile> createState() => _EditProfileState();
 }
 
 class _EditProfileState extends State<EditProfile> {
+  final _picker = ImagePicker();
+  File? _image;
+
+  _openImagePicker() async {
+    final XFile? pickedImage =
+        await _picker.pickImage(source: ImageSource.gallery);
+    if (pickedImage != null) {
+      setState(() {
+        _image = File(pickedImage.path);
+      });
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,9 +28,9 @@ class _EditProfileState extends State<EditProfile> {
         appBar: AppBar(
           backgroundColor: Colors.white,
           elevation: 0,
-          title: Text(
+          title: const Text(
             'Edit Profile',
-            style: GoogleFonts.robotoCondensed(
+            style: TextStyle(
               color: Colors.black,
               fontSize: 20.0,
               fontWeight: FontWeight.w600,
@@ -45,27 +50,20 @@ class _EditProfileState extends State<EditProfile> {
                         Center(
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(100.0),
-                            child: Image.asset(
-                              'assets/images/banner_kelas.jpg',
-                              width: 125,
-                              height: 125,
-                              fit: BoxFit.fill,
-                            ),
+                            child: widget.image != null
+                                ? Image.file(widget.image!, fit: BoxFit.cover)
+                                : Image.asset('assets/images/banner_kelas.jpg'),
                           ),
                         ),
-                        // Text(
-                        //   'Change',
-                        //   style: GoogleFonts.robotoCondensed(
-                        //       color: Color.fromARGB(255, 233, 5, 5)),
-                        // ),
+                        const SizedBox(
+                          height: 10.0,
+                        ),
                         TextButton(
-                          onPressed: () {},
+                          onPressed: _openImagePicker,
                           child: Text(
                             'Change',
                             style: GoogleFonts.robotoCondensed(
-                              color: Color.fromARGB(255, 233, 5, 5),
-                              fontSize: 17,
-                            ),
+                                color: Color.fromARGB(255, 233, 5, 5)),
                           ),
                         ),
                         SizedBox(
