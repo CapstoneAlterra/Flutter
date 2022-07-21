@@ -71,8 +71,15 @@ class _EditProfileState extends State<EditProfile> {
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(100.0),
                             child: widget.image != null
-                                ? Image.file(widget.image!, fit: BoxFit.cover)
-                                : Image.asset('assets/images/banner_kelas.jpg'),
+                                ? Image.file(
+                                    widget.image!,
+                                  )
+                                : Image.asset(
+                                    'assets/images/banner_kelas.jpg',
+                                    width: 125,
+                                    height: 125,
+                                    fit: BoxFit.cover,
+                                  ),
                           ),
                         ),
                         const SizedBox(
@@ -87,7 +94,7 @@ class _EditProfileState extends State<EditProfile> {
                           ),
                         ),
                         SizedBox(
-                          height: 25,
+                          height: 10,
                         ),
                         Row(
                           children: [

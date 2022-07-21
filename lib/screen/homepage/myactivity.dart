@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gym_management_system/widget/button_widget.dart';
 
-import '../../widget/button_widget.dart';
-import '../../widget/customdropdownbutton2.dart';
+// impor'old_homepage_catalog.dart'on2.dart';
 import '../membership/membership_page_screen.dart';
 import 'detail/detailactivity_screen.dart';
 import 'homepage_catalog.dart';
@@ -60,43 +60,46 @@ class _MyActivityState extends State<MyActivity> {
                   height: 20,
                 ),
                 Center(
-                    child: Column(children: [
-                  Image.asset('assets/images/Nofounds.png', height: 230),
-                  Text(
-                    'Kamu belum memiliki ',
-                    style: GoogleFonts.robotoCondensed(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 24,
+                  child: Column(children: [
+                    Image.asset('assets/images/Nofounds.png', height: 230),
+                    Text(
+                      'Kamu belum memiliki ',
+                      style: GoogleFonts.robotoCondensed(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 24,
+                      ),
                     ),
-                  ),
-                  Text(
-                    'jadwal kelas',
-                    style: GoogleFonts.robotoCondensed(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 24,
+                    Text(
+                      'jadwal kelas',
+                      style: GoogleFonts.robotoCondensed(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 24,
+                      ),
                     ),
-                  ),
-                  SizedBox(
-                    height: 15,
-                  ),
-                  Text(
-                    'Yuk, jelajahi kelas untuk mendapatkan jadwal',
-                    style: GoogleFonts.robotoCondensed(
-                      fontSize: 15,
+                    SizedBox(
+                      height: 15,
                     ),
-                  ),
-                  SizedBox(
-                    height: 25,
-                  ),
-                  ButtonWidget(
+                    Text(
+                      'Yuk, jelajahi kelas untuk mendapatkan jadwal',
+                      style: GoogleFonts.robotoCondensed(
+                        fontSize: 15,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 25,
+                    ),
+                    ButtonWidget(
                       text: 'Jelajahi Kelas',
                       onClicked: () {
-                        Navigator.of(context)
-                            .push(MaterialPageRoute(builder: (context) {
-                          return HomepageCatalog();
-                        }));
-                      })
-                ]))
+                        Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context) {
+                            return HomepageCatalog();
+                          }),
+                        );
+                      },
+                    ),
+                  ]),
+                ),
               ],
               crossAxisAlignment: CrossAxisAlignment.start,
             ),

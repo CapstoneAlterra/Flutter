@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_gym_management_system/screen/homepage/homepage_activity.dart';
 import 'package:flutter_gym_management_system/screen/homepage/homepage_catalog.dart';
 import 'package:flutter_gym_management_system/screen/homepage/homepage_profil.dart';
+// import 'package:flutter_gym_management_system/screen/homepage/old_homepage_catalog.dart'ar'new_homepage_home.dart':flutter_gym_management_system/screen/homepage/homepage_profil.dart';
 import 'package:flutter_gym_management_system/screen/homepage/myactivity.dart';
+// import 'package:flutter_gym_management_system/screen/homepage/old_homepage_home.dart'_management_system/screen/homepage/myactivity.dart';
 import 'homepage_home.dart';
 
 class HomePageScreen extends StatefulWidget {

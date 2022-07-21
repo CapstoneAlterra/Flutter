@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gym_management_system/screen/homepage/HomePage_Screen.dart';
+import 'package:flutter_gym_management_system/screen/homepage/homepage_home.dart';
 import 'package:flutter_gym_management_system/screen/login_register/register/register_screen.dart';
 import 'package:flutter_gym_management_system/widget/button2_widget.dart';
 import 'package:flutter_gym_management_system/widget/button_widget.dart';
@@ -53,7 +55,8 @@ class LoginRegister extends StatelessWidget {
               onClicked: () {
                 Navigator.of(context)
                     .push(MaterialPageRoute(builder: (context) {
-                  return LoginScreen();
+                  // return LoginScreen();
+                  return HomePageScreen();
                 }));
               },
             ),

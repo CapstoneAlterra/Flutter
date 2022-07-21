@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gym_management_system/screen/homepage/detail/bodycombat/detailbc_offline.dart';
 import 'package:flutter_gym_management_system/screen/homepage/detail/bodycombat/detailbc_online.dart';
-import 'package:flutter_gym_management_system/screen/homepage/homepage_catalog.dart';
+import 'package:flutter_gym_management_system/screen/homepage/detail/seeall_newsletter.dart';
+import 'package:flutter_gym_management_system/screen/homepage/old_homepage_catalog.dart';
 
 import 'package:flutter_gym_management_system/screen/homepage/notification/notification_screen.dart';
 import 'package:flutter_gym_management_system/screen/membership/membership_page_screen.dart';
@@ -123,13 +125,23 @@ class _HomepageHomeState extends State<HomepageHome> {
                     fontWeight: FontWeight.w500,
                   ),
                 ),
-                TextButton(
-                  onPressed: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => HomepageCatalog()));
-                  },
+                // TextButton(
+                //   onPressed: () {
+                //     Navigator.push(
+                //         context,
+                //         MaterialPageRoute(
+                //             builder: (context) => HomepageCatalog()));
+                //   },
+                //   child: Text(
+                //     'See All',
+                //     style: GoogleFonts.robotoCondensed(
+                //       color: Colors.black,
+                //       fontSize: 15.0,
+                //       fontWeight: FontWeight.w300,
+                //     ),
+                //   ),
+                // )
+                InkWell(
                   child: Text(
                     'See All',
                     style: GoogleFonts.robotoCondensed(
@@ -138,7 +150,24 @@ class _HomepageHomeState extends State<HomepageHome> {
                       fontWeight: FontWeight.w300,
                     ),
                   ),
-                )
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) {
+                        return SeeAllNewsletter();
+                      }),
+                    );
+                  },
+                ),
+                // ButtonWidget(
+                //   text: 'Jelajahi Kelas',
+                //   onClicked: () {
+                //     Navigator.of(context).push(
+                //       MaterialPageRoute(builder: (context) {
+                //         return HomepageCatalog();
+                //       }),
+                //     );
+                //   },
+                // ),
               ],
             ),
             const SizedBox(
@@ -171,7 +200,7 @@ class _HomepageHomeState extends State<HomepageHome> {
                                       ),
                                       Row(
                                         mainAxisAlignment:
-                                            MainAxisAlignment.start,
+                                            MainAxisAlignment.end,
                                         children: [
                                           Container(
                                             padding: EdgeInsets.symmetric(
@@ -208,30 +237,30 @@ class _HomepageHomeState extends State<HomepageHome> {
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Text(
-                                    'Cardio',
-                                    style: GoogleFonts.robotoCondensed(
-                                      color: Colors.black,
-                                      fontSize: 15.0,
-                                      fontWeight: FontWeight.w400,
-                                    ),
-                                  ),
-                                  // Container(
-                                  //   padding:
-                                  //       EdgeInsets.symmetric(horizontal: 5.0),
-                                  //   child: Text(
-                                  //     'Cardio',
-                                  //     style: GoogleFonts.robotoCondensed(
-                                  //       color: Colors.white,
-                                  //       fontSize: 15.0,
-                                  //       fontWeight: FontWeight.w400,
-                                  //     ),
-                                  //   ),
-                                  //   decoration: BoxDecoration(
-                                  //     borderRadius: BorderRadius.circular(10),
-                                  //     color: Color.fromARGB(255, 244, 80, 64),
+                                  // Text(
+                                  //   'Cardio',
+                                  //   style: GoogleFonts.robotoCondensed(
+                                  //     color: Colors.black,
+                                  //     fontSize: 15.0,
+                                  //     fontWeight: FontWeight.w400,
                                   //   ),
                                   // ),
+                                  Container(
+                                    padding:
+                                        EdgeInsets.symmetric(horizontal: 5.0),
+                                    child: Text(
+                                      'Cardio',
+                                      style: GoogleFonts.robotoCondensed(
+                                        color: Colors.white,
+                                        fontSize: 15.0,
+                                        fontWeight: FontWeight.w400,
+                                      ),
+                                    ),
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(10),
+                                      color: Color.fromARGB(255, 244, 80, 64),
+                                    ),
+                                  ),
                                   Text(
                                     '22/07/22',
                                     style: GoogleFonts.robotoCondensed(
@@ -319,7 +348,8 @@ class _HomepageHomeState extends State<HomepageHome> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => DetailBCActivity()));
+                                builder: (context) =>
+                                    DetailBCActivityOffline()));
                       },
                       child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -332,7 +362,7 @@ class _HomepageHomeState extends State<HomepageHome> {
                                     width: 180,
                                   ),
                                   Row(
-                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    mainAxisAlignment: MainAxisAlignment.end,
                                     children: [
                                       Container(
                                         padding: EdgeInsets.symmetric(
@@ -365,14 +395,30 @@ class _HomepageHomeState extends State<HomepageHome> {
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
                                 children: [
+                                  // Container(
+                                  //   child: Text(
+                                  //     'Cardio',
+                                  //     style: GoogleFonts.robotoCondensed(
+                                  //       color: Colors.black,
+                                  //       fontSize: 15.0,
+                                  //       fontWeight: FontWeight.w400,
+                                  //     ),
+                                  //   ),
+                                  // ),
                                   Container(
+                                    padding:
+                                        EdgeInsets.symmetric(horizontal: 5.0),
                                     child: Text(
                                       'Cardio',
                                       style: GoogleFonts.robotoCondensed(
-                                        color: Colors.black,
+                                        color: Colors.white,
                                         fontSize: 15.0,
                                         fontWeight: FontWeight.w400,
                                       ),
+                                    ),
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(10),
+                                      color: Color.fromARGB(255, 244, 80, 64),
                                     ),
                                   ),
                                   Text(
@@ -481,7 +527,7 @@ class _HomepageHomeState extends State<HomepageHome> {
                                       ),
                                       Row(
                                         mainAxisAlignment:
-                                            MainAxisAlignment.start,
+                                            MainAxisAlignment.end,
                                         children: [
                                           Container(
                                             padding: EdgeInsets.symmetric(
@@ -518,30 +564,30 @@ class _HomepageHomeState extends State<HomepageHome> {
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Text(
-                                    'Cardio',
-                                    style: GoogleFonts.robotoCondensed(
-                                      color: Colors.black,
-                                      fontSize: 15.0,
-                                      fontWeight: FontWeight.w400,
-                                    ),
-                                  ),
-                                  // Container(
-                                  //   padding:
-                                  //       EdgeInsets.symmetric(horizontal: 5.0),
-                                  //   child: Text(
-                                  //     'Cardio',
-                                  //     style: GoogleFonts.robotoCondensed(
-                                  //       color: Colors.white,
-                                  //       fontSize: 15.0,
-                                  //       fontWeight: FontWeight.w400,
-                                  //     ),
-                                  //   ),
-                                  //   decoration: BoxDecoration(
-                                  //     borderRadius: BorderRadius.circular(10),
-                                  //     color: Color.fromARGB(255, 244, 80, 64),
+                                  // Text(
+                                  //   'Cardio',
+                                  //   style: GoogleFonts.robotoCondensed(
+                                  //     color: Colors.black,
+                                  //     fontSize: 15.0,
+                                  //     fontWeight: FontWeight.w400,
                                   //   ),
                                   // ),
+                                  Container(
+                                    padding:
+                                        EdgeInsets.symmetric(horizontal: 5.0),
+                                    child: Text(
+                                      'Cardio',
+                                      style: GoogleFonts.robotoCondensed(
+                                        color: Colors.white,
+                                        fontSize: 15.0,
+                                        fontWeight: FontWeight.w400,
+                                      ),
+                                    ),
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(10),
+                                      color: Color.fromARGB(255, 244, 80, 64),
+                                    ),
+                                  ),
                                   Text(
                                     '23/07/22',
                                     style: GoogleFonts.robotoCondensed(
@@ -638,8 +684,7 @@ class _HomepageHomeState extends State<HomepageHome> {
                                       width: 180,
                                     ),
                                     Row(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.start,
+                                      mainAxisAlignment: MainAxisAlignment.end,
                                       children: [
                                         Container(
                                           padding: EdgeInsets.symmetric(
@@ -674,14 +719,30 @@ class _HomepageHomeState extends State<HomepageHome> {
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
+                                // Container(
+                                //   child: Text(
+                                //     'Cardio',
+                                //     style: GoogleFonts.robotoCondensed(
+                                //       color: Colors.black,
+                                //       fontSize: 15.0,
+                                //       fontWeight: FontWeight.w400,
+                                //     ),
+                                //   ),
+                                // ),
                                 Container(
+                                  padding:
+                                      EdgeInsets.symmetric(horizontal: 5.0),
                                   child: Text(
                                     'Cardio',
                                     style: GoogleFonts.robotoCondensed(
-                                      color: Colors.black,
+                                      color: Colors.white,
                                       fontSize: 15.0,
                                       fontWeight: FontWeight.w400,
                                     ),
+                                  ),
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(10),
+                                    color: Color.fromARGB(255, 244, 80, 64),
                                   ),
                                 ),
                                 Text(
@@ -783,7 +844,7 @@ class _HomepageHomeState extends State<HomepageHome> {
                                       ),
                                       Row(
                                         mainAxisAlignment:
-                                            MainAxisAlignment.start,
+                                            MainAxisAlignment.end,
                                         children: [
                                           Container(
                                             padding: EdgeInsets.symmetric(
@@ -820,30 +881,30 @@ class _HomepageHomeState extends State<HomepageHome> {
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Text(
-                                    'Cardio',
-                                    style: GoogleFonts.robotoCondensed(
-                                      color: Colors.black,
-                                      fontSize: 15.0,
-                                      fontWeight: FontWeight.w400,
-                                    ),
-                                  ),
-                                  // Container(
-                                  //   padding:
-                                  //       EdgeInsets.symmetric(horizontal: 5.0),
-                                  //   child: Text(
-                                  //     'Cardio',
-                                  //     style: GoogleFonts.robotoCondensed(
-                                  //       color: Colors.white,
-                                  //       fontSize: 15.0,
-                                  //       fontWeight: FontWeight.w400,
-                                  //     ),
-                                  //   ),
-                                  //   decoration: BoxDecoration(
-                                  //     borderRadius: BorderRadius.circular(10),
-                                  //     color: Color.fromARGB(255, 244, 80, 64),
+                                  // Text(
+                                  //   'Cardio',
+                                  //   style: GoogleFonts.robotoCondensed(
+                                  //     color: Colors.black,
+                                  //     fontSize: 15.0,
+                                  //     fontWeight: FontWeight.w400,
                                   //   ),
                                   // ),
+                                  Container(
+                                    padding:
+                                        EdgeInsets.symmetric(horizontal: 5.0),
+                                    child: Text(
+                                      'Cardio',
+                                      style: GoogleFonts.robotoCondensed(
+                                        color: Colors.white,
+                                        fontSize: 15.0,
+                                        fontWeight: FontWeight.w400,
+                                      ),
+                                    ),
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(10),
+                                      color: Color.fromARGB(255, 244, 80, 64),
+                                    ),
+                                  ),
                                   Text(
                                     '23/07/22',
                                     style: GoogleFonts.robotoCondensed(
@@ -946,7 +1007,10 @@ class _HomepageHomeState extends State<HomepageHome> {
                     ),
                   ),
                   onTap: () {
-                    HomepageHome();
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (contex) => SeeAllNewsletter()));
                   },
                 ),
               ],
