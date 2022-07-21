@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gym_management_system/screen/homepage/homepage_catalog.dart';
 
 import 'package:flutter_gym_management_system/screen/homepage/notification/notification_screen.dart';
 import 'package:flutter_gym_management_system/screen/membership/membership_page_screen.dart';
@@ -169,14 +170,22 @@ class _HomepageHomeState extends State<HomepageHome> {
                     fontWeight: FontWeight.w500,
                   ),
                 ),
-                Text(
-                  'See All',
-                  style: GoogleFonts.robotoCondensed(
-                    color: Colors.black,
-                    fontSize: 15.0,
-                    fontWeight: FontWeight.w300,
+                TextButton(
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => HomepageCatalog()));
+                  },
+                  child: Text(
+                    'See All',
+                    style: GoogleFonts.robotoCondensed(
+                      color: Colors.black,
+                      fontSize: 15.0,
+                      fontWeight: FontWeight.w300,
+                    ),
                   ),
-                ),
+                )
               ],
             ),
             const SizedBox(
@@ -204,12 +213,12 @@ class _HomepageHomeState extends State<HomepageHome> {
                                   Stack(
                                     children: [
                                       Image.asset(
-                                        'assets/images/banner_kelas.jpg',
-                                        fit: BoxFit.fill,
+                                        'assets/images/bodycombat.png',
+                                        width: 180,
                                       ),
                                       Row(
                                         mainAxisAlignment:
-                                            MainAxisAlignment.end,
+                                            MainAxisAlignment.start,
                                         children: [
                                           Container(
                                             padding: EdgeInsets.symmetric(
@@ -217,7 +226,7 @@ class _HomepageHomeState extends State<HomepageHome> {
                                             margin: EdgeInsets.symmetric(
                                                 horizontal: 3.0, vertical: 3.0),
                                             child: Text(
-                                              'Offline',
+                                              'Online',
                                               style:
                                                   GoogleFonts.robotoCondensed(
                                                 color: Colors.white,
@@ -229,7 +238,7 @@ class _HomepageHomeState extends State<HomepageHome> {
                                               borderRadius:
                                                   BorderRadius.circular(5),
                                               color: Color.fromARGB(
-                                                  255, 234, 5, 5),
+                                                  255, 0, 202, 229),
                                             ),
                                           ),
                                         ],
@@ -246,36 +255,36 @@ class _HomepageHomeState extends State<HomepageHome> {
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
                                 children: [
-                                  // Text(
-                                  //   'Cardio',
-                                  //   style: GoogleFonts.robotoCondensed(
-                                  //     color: Colors.black,
-                                  //     fontSize: 15.0,
-                                  //     fontWeight: FontWeight.w300,
-                                  //   ),
-                                  // ),
-                                  Container(
-                                    padding:
-                                        EdgeInsets.symmetric(horizontal: 5.0),
-                                    child: Text(
-                                      'Cardio',
-                                      style: GoogleFonts.robotoCondensed(
-                                        color: Colors.white,
-                                        fontSize: 15.0,
-                                        fontWeight: FontWeight.w400,
-                                      ),
-                                    ),
-                                    decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(10),
-                                      color: Color.fromARGB(255, 244, 80, 64),
+                                  Text(
+                                    'Cardio',
+                                    style: GoogleFonts.robotoCondensed(
+                                      color: Colors.black,
+                                      fontSize: 15.0,
+                                      fontWeight: FontWeight.w400,
                                     ),
                                   ),
+                                  // Container(
+                                  //   padding:
+                                  //       EdgeInsets.symmetric(horizontal: 5.0),
+                                  //   child: Text(
+                                  //     'Cardio',
+                                  //     style: GoogleFonts.robotoCondensed(
+                                  //       color: Colors.white,
+                                  //       fontSize: 15.0,
+                                  //       fontWeight: FontWeight.w400,
+                                  //     ),
+                                  //   ),
+                                  //   decoration: BoxDecoration(
+                                  //     borderRadius: BorderRadius.circular(10),
+                                  //     color: Color.fromARGB(255, 244, 80, 64),
+                                  //   ),
+                                  // ),
                                   Text(
                                     '22/07/22',
                                     style: GoogleFonts.robotoCondensed(
                                       color: Colors.black,
                                       fontSize: 15.0,
-                                      fontWeight: FontWeight.w300,
+                                      fontWeight: FontWeight.w400,
                                     ),
                                   ),
                                 ],
@@ -311,9 +320,9 @@ class _HomepageHomeState extends State<HomepageHome> {
                                     width: 5.0,
                                   ),
                                   Text(
-                                    '00:00',
+                                    '14:00',
                                     style: GoogleFonts.robotoCondensed(
-                                      color: Colors.grey,
+                                      color: Colors.black,
                                       fontSize: 17.0,
                                       fontWeight: FontWeight.w400,
                                     ),
@@ -328,11 +337,11 @@ class _HomepageHomeState extends State<HomepageHome> {
                               margin:
                                   const EdgeInsets.symmetric(horizontal: 7.0),
                               child: Text(
-                                'Rp. 999.999.999',
+                                'Rp. 50.000',
                                 style: GoogleFonts.robotoCondensed(
                                   color: Colors.red,
                                   fontSize: 17.0,
-                                  fontWeight: FontWeight.w500,
+                                  fontWeight: FontWeight.w600,
                                 ),
                               ),
                             )
@@ -362,11 +371,12 @@ class _HomepageHomeState extends State<HomepageHome> {
                                 Stack(
                                   children: [
                                     Image.asset(
-                                      'assets/images/banner_kelas.jpg',
-                                      fit: BoxFit.fill,
+                                      'assets/images/bodycombat.png',
+                                      width: 180,
                                     ),
                                     Row(
-                                      mainAxisAlignment: MainAxisAlignment.end,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.start,
                                       children: [
                                         Container(
                                           padding: EdgeInsets.symmetric(
@@ -374,7 +384,7 @@ class _HomepageHomeState extends State<HomepageHome> {
                                           margin: EdgeInsets.symmetric(
                                               horizontal: 3.0, vertical: 3.0),
                                           child: Text(
-                                            'Online',
+                                            'Offline',
                                             style: GoogleFonts.robotoCondensed(
                                               color: Colors.white,
                                               fontSize: 15.0,
@@ -384,8 +394,8 @@ class _HomepageHomeState extends State<HomepageHome> {
                                           decoration: BoxDecoration(
                                             borderRadius:
                                                 BorderRadius.circular(5),
-                                            color: Color.fromARGB(
-                                                255, 0, 202, 229),
+                                            color:
+                                                Color.fromARGB(255, 234, 5, 5),
                                           ),
                                         ),
                                       ],
@@ -402,19 +412,13 @@ class _HomepageHomeState extends State<HomepageHome> {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Container(
-                                  padding:
-                                      EdgeInsets.symmetric(horizontal: 5.0),
                                   child: Text(
                                     'Cardio',
                                     style: GoogleFonts.robotoCondensed(
-                                      color: Colors.white,
+                                      color: Colors.black,
                                       fontSize: 15.0,
                                       fontWeight: FontWeight.w400,
                                     ),
-                                  ),
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(10),
-                                    color: Color.fromARGB(255, 244, 80, 64),
                                   ),
                                 ),
                                 Text(
@@ -422,7 +426,7 @@ class _HomepageHomeState extends State<HomepageHome> {
                                   style: GoogleFonts.robotoCondensed(
                                     color: Colors.black,
                                     fontSize: 15.0,
-                                    fontWeight: FontWeight.w300,
+                                    fontWeight: FontWeight.w400,
                                   ),
                                 ),
                               ],
@@ -456,9 +460,9 @@ class _HomepageHomeState extends State<HomepageHome> {
                                   width: 5.0,
                                 ),
                                 Text(
-                                  '00:00',
+                                  '14:00',
                                   style: GoogleFonts.robotoCondensed(
-                                    color: Colors.grey,
+                                    color: Colors.black,
                                     fontSize: 17.0,
                                     fontWeight: FontWeight.w400,
                                   ),
@@ -472,11 +476,11 @@ class _HomepageHomeState extends State<HomepageHome> {
                           Container(
                             margin: const EdgeInsets.symmetric(horizontal: 7.0),
                             child: Text(
-                              'Rp. 999.999.999',
+                              'Rp. 60.000',
                               style: GoogleFonts.robotoCondensed(
                                 color: Colors.red,
                                 fontSize: 17.0,
-                                fontWeight: FontWeight.w500,
+                                fontWeight: FontWeight.w600,
                               ),
                             ),
                           )
@@ -498,6 +502,170 @@ class _HomepageHomeState extends State<HomepageHome> {
                   ),
                   Container(
                     width: 170,
+                    child: InkWell(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => DetailNewsLetter()));
+                      },
+                      child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Positioned(
+                              child: Column(
+                                children: [
+                                  Stack(
+                                    children: [
+                                      Image.asset(
+                                        'assets/images/stepup.png',
+                                        width: 180,
+                                      ),
+                                      Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.start,
+                                        children: [
+                                          Container(
+                                            padding: EdgeInsets.symmetric(
+                                                horizontal: 5.0, vertical: 5.0),
+                                            margin: EdgeInsets.symmetric(
+                                                horizontal: 3.0, vertical: 3.0),
+                                            child: Text(
+                                              'Online',
+                                              style:
+                                                  GoogleFonts.robotoCondensed(
+                                                color: Colors.white,
+                                                fontSize: 15.0,
+                                                fontWeight: FontWeight.w400,
+                                              ),
+                                            ),
+                                            decoration: BoxDecoration(
+                                              borderRadius:
+                                                  BorderRadius.circular(5),
+                                              color: Color.fromARGB(
+                                                  255, 0, 202, 229),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              margin: const EdgeInsets.symmetric(
+                                  horizontal: 7.0, vertical: 5.0),
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    'Cardio',
+                                    style: GoogleFonts.robotoCondensed(
+                                      color: Colors.black,
+                                      fontSize: 15.0,
+                                      fontWeight: FontWeight.w400,
+                                    ),
+                                  ),
+                                  // Container(
+                                  //   padding:
+                                  //       EdgeInsets.symmetric(horizontal: 5.0),
+                                  //   child: Text(
+                                  //     'Cardio',
+                                  //     style: GoogleFonts.robotoCondensed(
+                                  //       color: Colors.white,
+                                  //       fontSize: 15.0,
+                                  //       fontWeight: FontWeight.w400,
+                                  //     ),
+                                  //   ),
+                                  //   decoration: BoxDecoration(
+                                  //     borderRadius: BorderRadius.circular(10),
+                                  //     color: Color.fromARGB(255, 244, 80, 64),
+                                  //   ),
+                                  // ),
+                                  Text(
+                                    '23/07/22',
+                                    style: GoogleFonts.robotoCondensed(
+                                      color: Colors.black,
+                                      fontSize: 15.0,
+                                      fontWeight: FontWeight.w400,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              margin:
+                                  const EdgeInsets.symmetric(horizontal: 7.0),
+                              child: Text(
+                                'Step Up',
+                                style: GoogleFonts.robotoCondensed(
+                                  color: Colors.black,
+                                  fontSize: 15.0,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                            ),
+                            const SizedBox(
+                              height: 5.0,
+                            ),
+                            Container(
+                              margin:
+                                  const EdgeInsets.symmetric(horizontal: 7.0),
+                              child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Icon(
+                                    Icons.access_time,
+                                    color: Colors.black,
+                                    size: 19.0,
+                                  ),
+                                  SizedBox(
+                                    width: 5.0,
+                                  ),
+                                  Text(
+                                    '14:30',
+                                    style: GoogleFonts.robotoCondensed(
+                                      color: Colors.black,
+                                      fontSize: 17.0,
+                                      fontWeight: FontWeight.w400,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            const SizedBox(
+                              height: 5.0,
+                            ),
+                            Container(
+                              margin:
+                                  const EdgeInsets.symmetric(horizontal: 7.0),
+                              child: Text(
+                                'Rp. 50.000',
+                                style: GoogleFonts.robotoCondensed(
+                                  color: Colors.red,
+                                  fontSize: 17.0,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                            )
+                          ]),
+                    ),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      border: Border.all(
+                        color: Colors.grey,
+                        width: 1,
+                      ),
+                      borderRadius: BorderRadius.circular(3.0),
+                    ),
+                  ),
+                  const SizedBox(
+                    width: 10.0,
+                  ),
+                  Container(
+                    width: 170,
                     child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -508,10 +676,12 @@ class _HomepageHomeState extends State<HomepageHome> {
                                 Stack(
                                   children: [
                                     Image.asset(
-                                        'assets/images/banner_kelas.jpg',
-                                        fit: BoxFit.fill),
+                                      'assets/images/stepup.png',
+                                      width: 180,
+                                    ),
                                     Row(
-                                      mainAxisAlignment: MainAxisAlignment.end,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.start,
                                       children: [
                                         Container(
                                           padding: EdgeInsets.symmetric(
@@ -519,7 +689,7 @@ class _HomepageHomeState extends State<HomepageHome> {
                                           margin: EdgeInsets.symmetric(
                                               horizontal: 3.0, vertical: 3.0),
                                           child: Text(
-                                            'Online',
+                                            'Offline',
                                             style: GoogleFonts.robotoCondensed(
                                               color: Colors.white,
                                               fontSize: 15.0,
@@ -529,8 +699,8 @@ class _HomepageHomeState extends State<HomepageHome> {
                                           decoration: BoxDecoration(
                                             borderRadius:
                                                 BorderRadius.circular(5),
-                                            color: Color.fromARGB(
-                                                255, 0, 202, 229),
+                                            color:
+                                                Color.fromARGB(255, 234, 5, 5),
                                           ),
                                         ),
                                       ],
@@ -547,27 +717,21 @@ class _HomepageHomeState extends State<HomepageHome> {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Container(
-                                  padding:
-                                      EdgeInsets.symmetric(horizontal: 5.0),
                                   child: Text(
                                     'Cardio',
                                     style: GoogleFonts.robotoCondensed(
-                                      color: Colors.white,
+                                      color: Colors.black,
                                       fontSize: 15.0,
                                       fontWeight: FontWeight.w400,
                                     ),
                                   ),
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(10),
-                                    color: Color.fromARGB(255, 244, 80, 64),
-                                  ),
                                 ),
                                 Text(
-                                  '22/07/22',
+                                  '23/07/22',
                                   style: GoogleFonts.robotoCondensed(
                                     color: Colors.black,
                                     fontSize: 15.0,
-                                    fontWeight: FontWeight.w300,
+                                    fontWeight: FontWeight.w400,
                                   ),
                                 ),
                               ],
@@ -576,7 +740,7 @@ class _HomepageHomeState extends State<HomepageHome> {
                           Container(
                             margin: const EdgeInsets.symmetric(horizontal: 7.0),
                             child: Text(
-                              'BodyCombat',
+                              'Step Up',
                               style: GoogleFonts.robotoCondensed(
                                 color: Colors.black,
                                 fontSize: 15.0,
@@ -601,9 +765,9 @@ class _HomepageHomeState extends State<HomepageHome> {
                                   width: 5.0,
                                 ),
                                 Text(
-                                  '00:00',
+                                  '14:30',
                                   style: GoogleFonts.robotoCondensed(
-                                    color: Colors.grey,
+                                    color: Colors.black,
                                     fontSize: 17.0,
                                     fontWeight: FontWeight.w400,
                                   ),
@@ -617,15 +781,179 @@ class _HomepageHomeState extends State<HomepageHome> {
                           Container(
                             margin: const EdgeInsets.symmetric(horizontal: 7.0),
                             child: Text(
-                              'Rp. 999.999.999',
+                              'Rp. 60.000',
                               style: GoogleFonts.robotoCondensed(
                                 color: Colors.red,
                                 fontSize: 17.0,
-                                fontWeight: FontWeight.w500,
+                                fontWeight: FontWeight.w600,
                               ),
                             ),
                           )
                         ]),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      border: Border.all(
+                        color: Colors.grey,
+                        width: 1,
+                      ),
+                      borderRadius: BorderRadius.circular(3.0),
+                    ),
+                  ),
+                  const SizedBox(
+                    width: 10.0,
+                  ),
+                  Container(
+                    width: 170,
+                    child: InkWell(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => DetailNewsLetter()));
+                      },
+                      child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Positioned(
+                              child: Column(
+                                children: [
+                                  Stack(
+                                    children: [
+                                      Image.asset(
+                                        'assets/images/bodypump.png',
+                                        width: 180,
+                                      ),
+                                      Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.start,
+                                        children: [
+                                          Container(
+                                            padding: EdgeInsets.symmetric(
+                                                horizontal: 5.0, vertical: 5.0),
+                                            margin: EdgeInsets.symmetric(
+                                                horizontal: 3.0, vertical: 3.0),
+                                            child: Text(
+                                              'Online',
+                                              style:
+                                                  GoogleFonts.robotoCondensed(
+                                                color: Colors.white,
+                                                fontSize: 15.0,
+                                                fontWeight: FontWeight.w400,
+                                              ),
+                                            ),
+                                            decoration: BoxDecoration(
+                                              borderRadius:
+                                                  BorderRadius.circular(5),
+                                              color: Color.fromARGB(
+                                                  255, 0, 202, 229),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              margin: const EdgeInsets.symmetric(
+                                  horizontal: 7.0, vertical: 5.0),
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    'Cardio',
+                                    style: GoogleFonts.robotoCondensed(
+                                      color: Colors.black,
+                                      fontSize: 15.0,
+                                      fontWeight: FontWeight.w400,
+                                    ),
+                                  ),
+                                  // Container(
+                                  //   padding:
+                                  //       EdgeInsets.symmetric(horizontal: 5.0),
+                                  //   child: Text(
+                                  //     'Cardio',
+                                  //     style: GoogleFonts.robotoCondensed(
+                                  //       color: Colors.white,
+                                  //       fontSize: 15.0,
+                                  //       fontWeight: FontWeight.w400,
+                                  //     ),
+                                  //   ),
+                                  //   decoration: BoxDecoration(
+                                  //     borderRadius: BorderRadius.circular(10),
+                                  //     color: Color.fromARGB(255, 244, 80, 64),
+                                  //   ),
+                                  // ),
+                                  Text(
+                                    '23/07/22',
+                                    style: GoogleFonts.robotoCondensed(
+                                      color: Colors.black,
+                                      fontSize: 15.0,
+                                      fontWeight: FontWeight.w400,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              margin:
+                                  const EdgeInsets.symmetric(horizontal: 7.0),
+                              child: Text(
+                                'Body Pump',
+                                style: GoogleFonts.robotoCondensed(
+                                  color: Colors.black,
+                                  fontSize: 15.0,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                            ),
+                            const SizedBox(
+                              height: 5.0,
+                            ),
+                            Container(
+                              margin:
+                                  const EdgeInsets.symmetric(horizontal: 7.0),
+                              child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Icon(
+                                    Icons.access_time,
+                                    color: Colors.black,
+                                    size: 19.0,
+                                  ),
+                                  SizedBox(
+                                    width: 5.0,
+                                  ),
+                                  Text(
+                                    '17:00',
+                                    style: GoogleFonts.robotoCondensed(
+                                      color: Colors.black,
+                                      fontSize: 17.0,
+                                      fontWeight: FontWeight.w400,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            const SizedBox(
+                              height: 5.0,
+                            ),
+                            Container(
+                              margin:
+                                  const EdgeInsets.symmetric(horizontal: 7.0),
+                              child: Text(
+                                'Rp. 45.000',
+                                style: GoogleFonts.robotoCondensed(
+                                  color: Colors.red,
+                                  fontSize: 17.0,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                            )
+                          ]),
+                    ),
                     decoration: BoxDecoration(
                       color: Colors.white,
                       border: Border.all(
@@ -674,7 +1002,7 @@ class _HomepageHomeState extends State<HomepageHome> {
                 scrollDirection: Axis.horizontal,
                 children: <Widget>[
                   Container(
-                    width: 200,
+                    width: 170,
                     child: InkWell(
                       onTap: () {
                         Navigator.push(
@@ -685,8 +1013,10 @@ class _HomepageHomeState extends State<HomepageHome> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Image.asset('assets/images/banner_newsletter.jpeg',
-                              fit: BoxFit.fill),
+                          Image.asset(
+                            'assets/images/banner_newsletter.jpeg',
+                            width: 170,
+                          ),
                           Container(
                             margin: const EdgeInsets.symmetric(horizontal: 7.0),
                             child: Column(
@@ -733,7 +1063,7 @@ class _HomepageHomeState extends State<HomepageHome> {
                     width: 10.0,
                   ),
                   Container(
-                    width: 200,
+                    width: 170,
                     child: InkWell(
                       onTap: () {
                         Navigator.push(
@@ -744,8 +1074,10 @@ class _HomepageHomeState extends State<HomepageHome> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Image.asset('assets/images/banner_newsletter.jpeg',
-                              fit: BoxFit.fill),
+                          Image.asset(
+                            'assets/images/banner_newsletter.jpeg',
+                            width: 170,
+                          ),
                           Container(
                             margin: const EdgeInsets.symmetric(horizontal: 7.0),
                             child: Column(
@@ -792,7 +1124,7 @@ class _HomepageHomeState extends State<HomepageHome> {
                     width: 10.0,
                   ),
                   Container(
-                    width: 200,
+                    width: 170,
                     child: InkWell(
                       onTap: () {
                         Navigator.push(
@@ -803,8 +1135,10 @@ class _HomepageHomeState extends State<HomepageHome> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Image.asset('assets/images/banner_newsletter.jpeg',
-                              fit: BoxFit.fill),
+                          Image.asset(
+                            'assets/images/banner_newsletter.jpeg',
+                            width: 180,
+                          ),
                           Container(
                             margin: const EdgeInsets.symmetric(horizontal: 7.0),
                             child: Column(
